@@ -32,6 +32,11 @@ To participate, click to the [Teams event registration](https://bit.ly/teams-reg
 ## Slides
 [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/)
 
+## Rstudio Cloud
+If you cannot access to a local version of Posit RStudio IDE, you can (freely) use the following [RStudio Workspace](https://bit.ly/positcloud-ws-reproj) on Posit Cloud.[^1]
+
+Please note that there are some limitation on the cloud space (i.e., hardware: 0.5 CPU + 1 GB RAM; workshop: no git + no external private folders).
+
 ## Day 1
 
 If you have a local installation of Posit RStudio IDE, you can follow each step of the workshop running the following commands, which download a project with the final results ready to go for "the next" step.
@@ -76,11 +81,6 @@ Please note: following the workshop, you can start from the first bare project, 
 ## Day 2
 
 - > TO BE ADDED
-
-## Rstudio Cloud
-If you cannot access to a local version of Posit RStudio IDE, you can (freely) use the following [RStudio Workspace](https://bit.ly/positcloud-ws-reproj) on Posit Cloud.[^1]
-
-Please note that there are some limitation on the cloud space (i.e., hardware: 0.5 CPU + 1 GB RAM; workshop: no git + no external private folders).
 
 ## Code of Conduct
 
