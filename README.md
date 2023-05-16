@@ -29,6 +29,9 @@ Day 2: 2023/05/18 - 5:00 PM -- 7:00 PM (CEST)
 
 To participate, click to the [Teams event registration](https://bit.ly/teams-registration-ws-reproj).
 
+## Slides
+[https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/)
+
 ## Day 1
 
 If you have a local installation of Posit RStudio IDE, you can follow each step of the workshop running the following commands, which download a project with the final results ready to go for "the next" step.
