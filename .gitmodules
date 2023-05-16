@@ -1,0 +1,19 @@
+[submodule "bare.proj.01"]
+path = bare.proj.01
+url = https://github.com/CorradoLanera/bare.proj.01
+
+[submodule "foldered.02"]
+path = foldered.02
+url = https://github.com/CorradoLanera/foldered.02
+
+[submodule "changes.dry.03"]
+path = changes.dry.03
+url = https://github.com/CorradoLanera/changes.dry.03
+
+[submodule "structure.04"]
+path = structure.04
+url = https://github.com/CorradoLanera/structure.04
+
+[submodule "private.05"]
+path = private.05
+url = https://github.com/CorradoLanera/private.05
