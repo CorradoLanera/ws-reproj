@@ -1,0 +1,17 @@
+renv::upgrade()
+renv::install(
+  "fontawesome",
+  "gadenbuie/xaringanExtra",
+  "gadenbuie/xaringanthemer",
+  "gadenbuie/countdown",
+  "gadenbuie/metathis",
+  "gridExtra",
+  "knitr",
+  "markdown",
+  "rmarkdown",
+  "tidyverse",
+  "xaringan"
+)
+renv::update()
+renv::status()
+renv::snapshot()
