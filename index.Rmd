@@ -199,11 +199,209 @@ class: hide-count
 
 # .orange[Outline]
 
-- Topic **one**
+- Intro: definition of .orange[ASAP], the anatomy of a **patchwork**
 
-- Second **topic**
+- Program: start .orange[easy], do **not waste time**, look at possible futures
 
-- Another **interesting** topic
+- Day 1:
+  - Setup an **R**/**RStudio** project: `{here}`, `{renv}`, and .orange[git].
+  - Do they talk you about **folders**?
+  - What if **something change**? .orange[DRY]: Do Not Repeat Yourself!
+      + Data / **objects** (versions?)
+      + Code / Functions (.orange[refactor]?)
+      + **Bugs** (tests?)
+  - Please, give me some .orange[structure]! The magic of `DESCRIPTION`
+  - Oops! I have (internal) .orange[private data] for my (public) project!
+  - Are you ready to .orange[share] and collaborate? (welcome **GitHub**)
+
+- Day 2:
+  - Welcome `{laims.template}`
+  - **Conventions** are all about making stuff .orange[invisible]!
+  - working with `{targets}`
+
+- Outro: definition of .orange[ASAP], the anatomy of a **project**
+
+
+---
+class: hide-count
+
+# Code of Conduct
+
+The workshop will be conducted with a .orange[Code of Conduct]. By participating to the workshop, **you agree to abide by its terms**.
+
+Any form of behaviour to .orange[exclude], .orange[intimidate], or .orange[cause discomfort] **is a violation** of the Code of Conduct.
+
+In order to foster a .orange[positive and professional] learning environment I encourage the following kinds of behaviours:
+
+  - Use **welcoming** and **inclusive** language
+  - Be **respectful** of different viewpoints and experiences
+  - Gracefully **accept** constructive criticism
+  - Focus on what is **best for the community**
+  - Show **courtesy** and **respect** towards other community members
+
+If you believe someone is violating the Code of Conduct, I ask that you .orange[report it to me] and **I will take the appropriate actions** to address the situation.
+
+> If you believe **I am violating the Code of Conduct**, you can write to the responsible of our administration (<Cristiana.Vettori@ubep.unipd.it>) to report the incident.
+
+.center[**Thank .orange[you]!**]
+
+
+---
+
+# How to follow the workshops
+
+1. Do it by yourself
+
+2. At any stage you can:
+  `usethis::use_course("CorradoLanera/<name>.<stage>")`
+
+3. If you cannot (don't like) to run locally:
+  Posit Cloud (free for you) Workspace: [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
+
+
+4. Moves the **red** sticky note forward, if I am too fast
+5. Moves the .orange[Yellow] sticky note forward, if I am too slow
+6. For questions, rise your hands if you are not typing on a laptop, or put a sticky note on the rear of the laptop otherwise.
+
+
+---
+class: inverse, middle, center, hide-count
+
+# .orange[Intro: **ASAP**]
+ 
+
+---
+
+# .orange[AS]AP
+
+.orange[As Soon] As Possible
+
+- do the analysis
+
+--
+
+- update (overwrite) data
+
+- update (overwrite) the analysis
+
+- add a copy of the script (just to be sure)
+
+--
+
+- fix bug (in second version of analysis)
+
+- add an additional faster version (saving 14ms after 2h of hard-coding)
+
+--
+
+- send preliminary (hopefully super-trusted correct) report
+
+--
+
+- .orange[**BUG** reported by the boss!] (... it's a **BOGSS**)
+
+--
+
+- cannot give up to the shame: new version night-time without sleep
+- ASAP ASAP ASAP ASAP
+- (new files, new versions, new names, new plots)
+- SENT!
+
+---
+class: inverse, middle, center, hide-count
+
+...
+
+--
+
+...
+
+---
+class: middle, center
+
+.orange[**BOGSS**]
+
+--
+
+finally shamed
+
+project passed to new analyst
+
+... ASAP ASAP ASAP... ASAY (**As Soon As YESTERDAY**)
+
+--
+
+<br>
+
+cannot understand ANYTHING of the work already done! (...what a of newbe!)
+
+
+RESTART (adding sub-folders, sub-files, sub-version, sub-something to the project!)
+
+<br>
+
+.orange[DONE] before diner!
+
+---
+class: inverse, middle, center, hide-count
+
+...
+
+--
+
+...
+
+---
+class: middle, center
+
+.orange[**BOGSS**]
+
+--
+
+<br>
+
+BOSS: "I would have spend less time if did it by myself!"
+
+BOSS: Ok, I will do it!
+
+BOSS: ... which are the original/last data?! ...
+
+--
+
+<br>
+
+...
+
+
+--
+
+<br>
+BOSS: ChatGPT, write a report that appear to correctly assess the analyses!
+
+--
+
+.orange[**THE END.**]
+
+
+---
+class: inverse, middle, center, hide-count
+
+Go Tidyverse
+
+---
+class: middle, center
+
+<img src="img/tidy-red.png" width="100%"/>
+
+---
+class: inverse, middle, center, hide-count
+
+Time pass...
+
+---
+class: middle, center
+
+<img src="img/time-red.png" width="100%"/>
 
 
 
@@ -211,35 +409,223 @@ class: hide-count
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Topic **one**]
+# .orange[Don't waste **time**]
  
 
 ---
 
-# Foo
+# Which one **time**?!
+
+- Your time?!
+- My time?!
+- Boss time?!
+
+--
+
+<br>
+
+.center[.orange[Project time] =
+
+$$\sum_{i = 1}^{correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i(by = p, for = t, include\_breaks = TRUE)\right)$$
+]
+--
+<br>
+<br>
+
+.center[
+$$ASAP := argmin(Project\ time)$$
+(.orange[CL] **personal** definition!)
+
+]
+
+---
+class: inverse, middle, center, hide-count
+
+# .orange[Day **1**]
+
+
+---
+
+# Create a project
+
+Just a bare project
+
+> create new RStudio project (including git and {renv} ticks)
+
+> `usethis::use_course("CorradoLanera/bare.proj.01")`
+
+> Posit Cloud: 01 - Bare project
+
+--
+
+- lets talk about `{here}` (and a `00-setup.R` script)
+
+--
+
+- lets talk about `{renv}`
+
+--
+
+- lets talk about git
+
+---
+
+# Start some analysis
+
+- analysis.R
+- report.rmd
+
+
+> where to put input data and output files? How to reach them?
 
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Second **topic**]
- 
+.orange[Live session]
+
+Start from:
+
+`usethis::use_course("CorradoLanera/bare.proj.01")`
+
+Posit Cloud: 01 - Bare project
+
 
 ---
 
-# Bar
+# Changes?
 
+> what if some input/output file changed?
+
+> what about repeated code?
+
+> what if you find some bugs?
 
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Another **interesting** topic]
- 
- 
+.orange[Live session]
+
+Start from:
+
+`usethis::use_course("CorradoLanera/foldered.02")`
+
+Posit Cloud: 02 - Foldered
+
+
 ---
 
-# Tar
+# All this code together is really really ORRIBLE and confusing!
+
+> what about some structure?
+
+> what about repeated code?
+
+
+---
+class: inverse, middle, center, hide-count
+
+.orange[Live session]
+
+Start from:
+
+`usethis::use_course("CorradoLanera/changes.dry.03")`
+
+Posit Cloud: 03 - Changes & DRY
+
+
+---
+
+# Data Protection...
+
+> what if I have private data (stored centralized, visible by colleague only)?
+
+> What if I would like to share the code (but not the data)?
+
+
+---
+class: inverse, middle, center, hide-count
+
+.orange[Live session]
+
+Start from:
+
+`usethis::use_course("CorradoLanera/structure.04")`
+
+Posit Cloud: 04 - structure
+
+
+---
+# Last version :-) today
+
+`usethis::use_course("CorradoLanera/private.05")`
+
+Posit Cloud: 05 - private
+
+
+
+
+
+ 
+---
+class: inverse, middle, center, hide-count
+
+# .orange[Day **2**]
+
+## `laims.tempalte`
+
+---
+class: inverse, middle, center, hide-count
+
+# .orange[Outro: **ASAP** and recap]
+ 
+
+<!-- --- -->
+
+<!-- # AS.orange[AP] -->
+
+<!-- As Soon .orange[As Possible] -->
+
+<!-- - Start .orange[easy] and .orange[slow] but pointing **after** conclusion! -->
+
+<!-- - Speed go to zero if the work is not correct! -->
+
+<!-- - **Bugs will arrive**. For sure! -->
+
+<!-- - Do/check .orange[only] what you really have to do/check -->
+
+<!-- - Enforce .orange[standards] and .orange[style] -->
+
+<!-- - Use **templates** -->
+
+<!-- --- -->
+
+<!-- # Technical recap -->
+
+<!-- - Track  -->
+<!--   + changes (git) -->
+<!--   + environment (`{renv}`) -->
+
+<!-- - Use portable paths (`{here}`) -->
+
+<!-- - Use **standard** folder and files (keep structure .orange[invisible]) -->
+
+<!-- - .orange[Refactor] your code to extract logic by level of abstraction  -->
+
+<!-- - (**DRY**) -->
+
+<!-- - Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...) -->
+
+<!-- - Environmental variables (from function calls!) to point to private locations -->
+
+<!-- - Let `{targets}` to manage project dependencies, efficient runs, and efficient storage of your objects. -->
+
+<!-- - Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public! -->
+
+<!-- -- -->
+
+<!-- .center[Go for $ASAP := argmin(Project\ time)$!!] -->
 
 ---
 class: inverse, center, middle, hide-count
