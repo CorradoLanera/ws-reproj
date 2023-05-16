@@ -461,17 +461,40 @@ Just a bare project
 
 > Posit Cloud: 01 - Bare project
 
---
+---
+class: inverse, center
 
-- lets talk about `{here}` (and a `00-setup.R` script)
+# ---Your-Turn-->
 
---
+Let's talk about `{here}` (and a `00-setup.R` script)
 
-- lets talk about `{renv}`
+Let's talk about `{renv}`
 
---
+Let's talk about git
 
-- lets talk about git
+
+```{r, echo = FALSE}
+countdown(minutes = 1, play_sound = TRUE,
+          left = "34%", bottom = "30%")
+```
+
+<br><br><br><br>
+
+<small><small><small><small>Click the timer to start the countdown</small></small></small></small>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+---
+class: inverse, middle, center, hide-count
+
+.orange[Live session]
+
+Start from:
+
+`usethis::use_course("CorradoLanera/bare.proj.01")`
+
+Posit Cloud: 01 - Bare project
+
 
 ---
 
@@ -481,7 +504,26 @@ Just a bare project
 - report.rmd
 
 
-> where to put input data and output files? How to reach them?
+---
+class: inverse, center
+
+# ---Your-Turn-->
+
+Where to put input data and output files? How to reach them?
+
+
+```{r, echo = FALSE}
+countdown(minutes = 1, play_sound = TRUE,
+          left = "34%", bottom = "30%")
+```
+
+<br><br><br><br>
+
+<small><small><small><small>Click the timer to start the countdown</small></small></small></small>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
 
 
 ---
@@ -500,11 +542,35 @@ Posit Cloud: 01 - Bare project
 
 # Changes?
 
-> what if some input/output file changed?
+Now, suppose something changes...
 
-> what about repeated code?
+---
+class: inverse, center
 
-> what if you find some bugs?
+# ---Your-Turn-->
+
+What if some input/output file changed?
+
+What about repeated code?
+
+What if you find some bugs?
+
+
+```{r, echo = FALSE}
+countdown(minutes = 1, play_sound = TRUE,
+          left = "34%", bottom = "30%")
+```
+
+<br><br><br><br>
+
+<small><small><small><small>Click the timer to start the countdown</small></small></small></small>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
 
 
 ---
@@ -521,11 +587,36 @@ Posit Cloud: 02 - Foldered
 
 ---
 
-# All this code together is really really ORRIBLE and confusing!
+# Please...
 
-> what about some structure?
 
-> what about repeated code?
+... All this code together is really really ORRIBLE and confusing!
+
+
+
+---
+class: inverse, center
+
+# ---Your-Turn-->
+
+What about some structure?
+
+What about repeated code?
+
+
+```{r, echo = FALSE}
+countdown(minutes = 1, play_sound = TRUE,
+          left = "34%", bottom = "30%")
+```
+
+<br><br><br><br>
+
+<small><small><small><small>Click the timer to start the countdown</small></small></small></small>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+
 
 
 ---
@@ -544,9 +635,32 @@ Posit Cloud: 03 - Changes & DRY
 
 # Data Protection...
 
-> what if I have private data (stored centralized, visible by colleague only)?
+Do you own your data?
+Do you work alone?
 
-> What if I would like to share the code (but not the data)?
+---
+class: inverse, center
+
+# ---Your-Turn-->
+
+what if I have private data (stored centralized, visible by colleague only)?
+
+What if I would like to share the code (but not the data)?
+
+
+```{r, echo = FALSE}
+countdown(minutes = 1, play_sound = TRUE,
+          left = "34%", bottom = "30%")
+```
+
+<br><br><br><br>
+
+<small><small><small><small>Click the timer to start the countdown</small></small></small></small>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+
 
 
 ---
