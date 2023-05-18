@@ -16,7 +16,7 @@
     <link href="index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
     <script src="index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
     <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x3523b0a50be4275a980ebe5c93f79e0","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x48e97f82d364d01a0b891cc46872acf","expires":1}</script>
     <script src="index_files/himalaya/himalaya.js"></script>
     <script src="index_files/js-cookie/js.cookie.js"></script>
     <link href="index_files/editable/editable.css" rel="stylesheet" />
@@ -530,7 +530,7 @@ Posit Cloud: 03 - Changes &amp; DRY
 
 # Data Protection...
 
-&gt; what if I have private data (stored centralized, visible by colleague only)?
+&gt; what if I have private data (centralized, and visible by colleague only)?
 
 &gt; What if I would like to share the code (but not the data)?
 
@@ -547,15 +547,6 @@ Start from:
 Posit Cloud: 04 - structure
 
 
----
-# Last version :-) today
-
-`usethis::use_course("CorradoLanera/private.05")`
-
-Posit Cloud: 05 - private
-
-
-
 
 
  
@@ -567,56 +558,128 @@ class: inverse, middle, center, hide-count
 ## `laims.tempalte`
 
 ---
+
+# Already .orange[explored] features
+
+- (`{here}`)&lt;sup&gt;*&lt;/sup&gt; (your .orange[path will works] on everyone computers!)
+
+- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking yours and others changes at every single lines levels)
+
+- `{renv}` (packages .orange[updates will not scare] you anymore!)
+
+- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their works, and everything as difficult as pressing `CTRL` + `SHIFT` + `T`)
+
+- (`analysis.R`)&lt;sup&gt;*&lt;/sup&gt; + `report.R` (directly inject your - __Updated__ - objects into your reports and sample code)
+
+- private data-raw/, (data/)&lt;sup&gt;*&lt;/sup&gt;, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people can run] it! Still, __you can share__ a selection of derived object to anyone!)
+
+
+.footnote[[*] Why this is between parentheses it will be clear soon.] 
+
+
+---
+# New .orange[(not yet) explored] features
+
+- powered by `{targets}`:
+
+  + automatic discovering and saving of intermediate/final computed objects
+
+  + automatic discovering of functions and objects dependencies
+  
+  + automatic run of all and only one outdated dependencies for updates
+
+- an `explore.R` script specifically designed to host completely **unruled** stuff, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
+
+- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage selected)
+
+- professional-grade report,including logos, authorships with OrcID, citations, marginal notes, custom size for figures, and more (and maybe even more than more if powered by Quarto&lt;sup&gt;*&lt;/sup&gt;)
+
+
+.footnote[[*] We will not talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).] 
+
+---
+# .orange[Bonus-unexplored] feature
+
+- Code testing coverage: _What .orange[percentage] of "**do-something**" lines of code are effectively tested?_
+
+- Lint checks: _How .orange[good] is your code "**statically**"?_
+
+- GitHub Action: _.orange[automatic] execution of tests/lint/CRAN checks at **every push**!_
+
+- R-package structure: _you can make exported functions available as a **ready-to-use** .orange[r-package]._
+
+
+
+---
+class: inverse, middle, center, hide-count
+
+.orange[Live session]
+
+Take as reference:
+
+`usethis::use_course("CorradoLanera/private.05")`
+
+or
+
+Posit Cloud: 05 - private
+
+
+and go to [https://github.com/UBESP-DCTV/laims.analysis](https://github.com/UBESP-DCTV/laims.analysis)&lt;br&gt;(You will need a (free) GitHub account!)
+
+
+---
 class: inverse, middle, center, hide-count
 
 # .orange[Outro: **ASAP** and recap]
- 
 
-&lt;!-- --- --&gt;
 
-&lt;!-- # AS.orange[AP] --&gt;
+---
 
-&lt;!-- As Soon .orange[As Possible] --&gt;
+# AS.orange[AP]
 
-&lt;!-- - Start .orange[easy] and .orange[slow] but pointing **after** conclusion! --&gt;
+As Soon .orange[As Possible]
 
-&lt;!-- - Speed go to zero if the work is not correct! --&gt;
+- Start .orange[easy] and .orange[slow] but keep your eyes on your final results!
 
-&lt;!-- - **Bugs will arrive**. For sure! --&gt;
+- If your results are not correct, all your _high-speed_ goes down to zero!
 
-&lt;!-- - Do/check .orange[only] what you really have to do/check --&gt;
+- **Bugs will arrive**. For sure! (The greatest error you can do is to assume your code will be error-free)
 
-&lt;!-- - Enforce .orange[standards] and .orange[style] --&gt;
+- Do/check .orange[only] what you really have to do/check
 
-&lt;!-- - Use **templates** --&gt;
+- Enforce .orange[standards] and .orange[style]
 
-&lt;!-- --- --&gt;
+- Use **templates**
 
-&lt;!-- # Technical recap --&gt;
+---
 
-&lt;!-- - Track  --&gt;
-&lt;!--   + changes (git) --&gt;
-&lt;!--   + environment (`{renv}`) --&gt;
+# Technical recap
 
-&lt;!-- - Use portable paths (`{here}`) --&gt;
+- Track
+  + changes (git)
+  + environment (`{renv}`)
 
-&lt;!-- - Use **standard** folder and files (keep structure .orange[invisible]) --&gt;
+- Use portable paths (`{here}`)
 
-&lt;!-- - .orange[Refactor] your code to extract logic by level of abstraction  --&gt;
+- Use **standard** folder and files (keep structure .orange[invisible])
 
-&lt;!-- - (**DRY**) --&gt;
+- .orange[Refactor] your code to extract logic by level of abstraction
 
-&lt;!-- - Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...) --&gt;
+- (**DRY**)
 
-&lt;!-- - Environmental variables (from function calls!) to point to private locations --&gt;
+- Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...)
 
-&lt;!-- - Let `{targets}` to manage project dependencies, efficient runs, and efficient storage of your objects. --&gt;
+- Environmental variables (from function calls!) to point to private locations
 
-&lt;!-- - Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public! --&gt;
+- Let `{targets}` to manage project dependencies, efficient runs, and efficient storage of your objects.
 
-&lt;!-- -- --&gt;
+- Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public!
 
-&lt;!-- .center[Go for `\(ASAP := argmin(Project\ time)\)`!!] --&gt;
+.center[**If you need all of above, use templates! (like the `laims.analysis` one)**]
+
+--
+
+.center[Go for `\(ASAP := argmin(Project\ time)\)`!!]
 
 ---
 class: inverse, center, middle, hide-count
