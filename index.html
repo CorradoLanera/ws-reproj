@@ -16,7 +16,7 @@
     <link href="index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
     <script src="index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
     <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x48e97f82d364d01a0b891cc46872acf","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x6e9ccc59da34d24a98c5b77952b1950","expires":1}</script>
     <script src="index_files/himalaya/himalaya.js"></script>
     <script src="index_files/js-cookie/js.cookie.js"></script>
     <link href="index_files/editable/editable.css" rel="stylesheet" />
@@ -152,11 +152,11 @@ class: center, middle, bg_title, hide-count
 &lt;br&gt;
 &lt;br&gt;
 
-**LAIMS workshops** - Padova/UBEP + Teams, 2023/05/16-18
+[**Workshop**](https://rmed2023a.sched.com/event/1MwSI/a-journey-from-patchworks-to-projects-a-ready-to-use-project-template-to-popularize-reproducible-research-pipelines-in-everyday-projects-corrado-lanera-andrea-pedot-unit-of-biostatistics-epidemiology-and-public-health-university-of-padova) - Live on Zoom - 2023/06/06 11:00am -- 2:00pm EDT
 
-UBEP Seminars
+[.orange[R]/.orange[Medicine]](https://events.linuxfoundation.org/r-medicine/) 2023/06/05-09 
 
-Corrado Lanera | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
+[.orange[Corrado Lanera]](mailto:CorradoLanera@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
 
 ---
 class: inverse, bottom, right, hide-count
@@ -185,80 +185,58 @@ class: hide-count
 
 # .orange[Outline]
 
-- Intro: definition of .orange[ASAP], the anatomy of a **patchwork**
+- **.underline[Setup]**: Slides, repository, Posit Cloud Workspace, Sched
 
-- Program: start .orange[easy], do **not waste time**, look at possible futures
+- **.underline[Intro]**: definition of **.orange[AS]**AP, the anatomy of a **.orange[patchwork]**
 
-- Day 1:
-  - Setup an **R**/**RStudio** project: `{here}`, `{renv}`, and .orange[git].
-  - Do they talk you about **folders**?
-  - What if **something change**? .orange[DRY]: Do Not Repeat Yourself!
+- **.underline[Program]**: start **.orange[slow]**, do not waste **.orange[_time_]**
+
+- **.underline[Step-by-step]**:
+  - Setup an **R**/**RStudio** project: git, `{renv}`, and `{here}`.
+  - Are you ready to **.orange[share]** and **.orange[collaborate]**? (welcome **GitHub**)
+  - What about **.orange[folders]**?
+  - What about **.orange[changes]**?
       + Data / **objects** (versions?)
-      + Code / Functions (.orange[refactor]?)
+      + Code / **Functions** (isolation, abstractions?)
       + **Bugs** (tests?)
-  - Please, give me some .orange[structure]! The magic of `DESCRIPTION`
-  - Oops! I have (internal) .orange[private data] for my (public) project!
-  - Are you ready to .orange[share] and collaborate? (welcome **GitHub**)
-
-- Day 2:
-  - Welcome `{laims.template}`
-  - **Conventions** are all about making stuff .orange[invisible]!
+  - Please, give me some **.orange[structure]**! The magic of the `DESCRIPTION` file
+  - Oops! I have internal (**.orange[private]**) data for my (**.orange[public]**) project!
   - working with `{targets}`
 
-- Outro: definition of .orange[ASAP], the anatomy of a **project**
+- **.underline[All-in-one template]**: welcome [**`{laims.analysis}`**](https://github.com/UBESP-DCTV/laims.analysis)
 
-
----
-class: hide-count
-
-# Code of Conduct
-
-The workshop will be conducted with a .orange[Code of Conduct]. By participating to the workshop, **you agree to abide by its terms**.
-
-Any form of behaviour to .orange[exclude], .orange[intimidate], or .orange[cause discomfort] **is a violation** of the Code of Conduct.
-
-In order to foster a .orange[positive and professional] learning environment I encourage the following kinds of behaviours:
-
-  - Use **welcoming** and **inclusive** language
-  - Be **respectful** of different viewpoints and experiences
-  - Gracefully **accept** constructive criticism
-  - Focus on what is **best for the community**
-  - Show **courtesy** and **respect** towards other community members
-
-If you believe someone is violating the Code of Conduct, I ask that you .orange[report it to me] and **I will take the appropriate actions** to address the situation.
-
-&gt; If you believe **I am violating the Code of Conduct**, you can write to the responsible of our administration (&lt;Cristiana.Vettori@ubep.unipd.it&gt;) to report the incident.
-
-.center[**Thank .orange[you]!**]
-
+- **.underline[Outro]**: definition of AS**.orange[AP]**, the anatomy of a **.orange[project]**
 
 ---
 
-# How to follow the workshops
+# How to .orange[follow] the workshops
 
-1. Do it by yourself
-
-2. At any stage you can:
-  `usethis::use_course("CorradoLanera/&lt;name&gt;.&lt;stage&gt;")`
-
-3. If you cannot (don't like) to run locally:
-  Posit Cloud (free for you) Workspace: [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
- 
- 
-4. Moves the **red** sticky note forward, if I am too fast
-5. Moves the .orange[Yellow] sticky note forward, if I am too slow
-6. For questions, rise your hands if you are not typing on a laptop, or put a sticky note on the rear of the laptop otherwise.
-
-### Resources
+#### Resources:
 
 - .orange[Slides]: [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/#1)
-- Posit .orange[Cloud Workspace]: [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
 - Whole .orange[project]: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
+- **Questions** @Zoom: .orange[Q/A] &amp; .orange[Breakout Room] w/ **Andrea Pedot**
+
+#### Coding:
+
+1. If you like it **.orange[local]**: code **on your system**
+
+  - At any stage you can:&lt;br&gt;
+  `usethis::use_course("CorradoLanera/&lt;stage name&gt;")`:
+  - `&lt;stage name&gt;`:
+      - `bare.proj.01`
+      - `foldered.02`
+      - `changes.dry.03`
+      - `structure.04`
+      - `private.05`
+      - `targets.06`
+
+3. If you like it **.orange[remote]**: code (free of charge) **on Posit Cloud Workspace**:&lt;br&gt; [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Intro: **ASAP**]
+# Intro: **.orange[AS]AP**
  
 
 ---
@@ -267,36 +245,35 @@ class: inverse, middle, center, hide-count
 
 .orange[As Soon] As Possible
 
-- do the analysis
-
+- get the raw-data, manipulate them to .orange[directly fix easy-bugs]
+- .orange[do the analysis]
 --
-
-- update (overwrite) data
-
+- get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some less **forgotten**?)
 - update (overwrite) the analysis
-
-- add a copy of the script (just to be sure)
+- add a copy **`analysis_v2.R`** of the script (just to be sure)
+--
+- found a bug, fix it (in third **`analysis_v2_ok.R`** version of analysis)
+- In doubt for a fourth execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to saving full 15 seconds (after 2h of try-and-see coding experiments)
 
 --
 
-- fix bug (in second version of analysis)
-
-- add an additional faster version (saving 14ms after 2h of hard-coding)
+- &gt; **send** (the hopefully correct) report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
 
 --
 
-- send preliminary (hopefully super-trusted correct) report
+- &gt; get a .orange[**BUG** reported by the **BOSS**!] (... it's a **.orange[_BOGSS_]** 😨🤦😭)
 
 --
 
-- .orange[**BUG** reported by the boss!] (... it's a **BOGSS**)
+- cannot give up: new version night-time (**.orange[without sleep]**)
+- **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP**
 
 --
 
-- cannot give up to the shame: new version night-time without sleep
-- ASAP ASAP ASAP ASAP
-- (new files, new versions, new names, new plots)
-- SENT!
+.center[_... many new-files, new-versions, new-names, new-plots, new-fixes later..._]
+--
+&lt;br&gt;
+.center[**SENT!**]
 
 ---
 class: inverse, middle, center, hide-count
@@ -307,67 +284,62 @@ class: inverse, middle, center, hide-count
 
 ...
 
----
-class: middle, center
+--
 
-.orange[**BOGSS**]
+**.orange[_BOGSS_]** 😱🤦😭
 
 --
 
-finally shamed
+The project is passed to a new analyst now
 
-project passed to new analyst
-
-... ASAP ASAP ASAP... ASAY (**As Soon As YESTERDAY**)
+... **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP** ...&lt;br&gt;**.orange[ASAY]** (**.orange[A]s .orange[S]oon .orange[A]s .orange[Y]ESTERDAY**)
 
 --
 
+
+they cannot understand **ANYTHING** of the work already done...!
+
+
+prefer to **RESTART**&lt;br&gt;(adding sub-folders, sub-files, sub-version, sub-plots, sub-fixes to the project!)
+
 &lt;br&gt;
 
-cannot understand ANYTHING of the work already done! (...what a of newbe!)
+**.orange[DONE!]**, and before diner! 😎😎😎
 
+--
 
-RESTART (adding sub-folders, sub-files, sub-version, sub-something to the project!)
+...
 
-&lt;br&gt;
+--
 
-.orange[DONE] before diner!
+...
+
+**.orange[_BOGSS_]** 😱🤦😭
 
 ---
 class: inverse, middle, center, hide-count
 
-...
+#### BOSS:
+
+"I would have spend less time if did it by myself!"
+
+Ok, I will do it!
+
+mmm 🤔 ... which are the original/last data?! ...
 
 --
 
 ...
 
----
-class: middle, center
-
-.orange[**BOGSS**]
-
 --
-
-&lt;br&gt;
-
-BOSS: "I would have spend less time if did it by myself!"
-
-BOSS: Ok, I will do it!
-
-BOSS: ... which are the original/last data?! ...
-
---
-
-&lt;br&gt;
 
 ...
 
-
 --
 
-&lt;br&gt;
-BOSS: ChatGPT, write a report that appear to correctly assess the analyses!
+&lt;img src="img/gpt_help_me.png" width="100%"/&gt;
+
+😱🤦😭
 
 --
 
@@ -383,11 +355,6 @@ Go Tidyverse
 class: middle, center
 
 &lt;img src="img/tidy-red.png" width="100%"/&gt;
-
----
-class: inverse, middle, center, hide-count
-
-Time pass...
 
 ---
 class: middle, center
@@ -415,7 +382,7 @@ class: inverse, middle, center, hide-count
 
 &lt;br&gt;
 
-.center[.orange[Project time] =
+**.center[.orange[Project time]** =
 
 `$$\sum_{i = 1}^{correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i(by = p, for = t, include\_breaks = TRUE)\right)$$`
 ]
@@ -424,18 +391,20 @@ class: inverse, middle, center, hide-count
 &lt;br&gt;
 
 .center[
-`$$ASAP := argmin(Project\ time)$$`
-(.orange[CL] **personal** definition!)
+**AS.orange[AP]** `\(:= argmin(Project\ time)\)`
+
+(**.orange[CL] personal** definition!)
 
 ]
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Day **1**]
+# **.orange[Step**-by-**step]**
 
 
 ---
+
 
 # Create a project
 
@@ -486,11 +455,14 @@ Posit Cloud: 01 - Bare project
 
 # Changes?
 
+ .orange[DRY]: Do Not Repeat Yourself!
+
 &gt; what if some input/output file changed?
 
 &gt; what about repeated code?
 
 &gt; what if you find some bugs?
+
 
 
 ---
@@ -630,7 +602,7 @@ and go to [https://github.com/UBESP-DCTV/laims.analysis](https://github.com/UBES
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Outro: **ASAP** and recap]
+# Outro: **AS.orange[AP]**
 
 
 ---
@@ -649,7 +621,8 @@ As Soon .orange[As Possible]
 
 - Enforce .orange[standards] and .orange[style]
 
-- Use **templates**
+- Use **templates**:   .orange[Conventions] are all about making stuff **.orange[invisible]**!
+
 
 ---
 
