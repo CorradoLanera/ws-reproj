@@ -162,7 +162,6 @@ style_duo_accent(
 # **Efficient Reproducibility in R**<br>**.orange[A Journey from Patchworks to Projects]**
 
 <br>
-<br>
 
 [**Workshop**](https://rmed2023a.sched.com/event/1MwSI/a-journey-from-patchworks-to-projects-a-ready-to-use-project-template-to-popularize-reproducible-research-pipelines-in-everyday-projects-corrado-lanera-andrea-pedot-unit-of-biostatistics-epidemiology-and-public-health-university-of-padova) - Live on Zoom - 2023/06/06 11:00am -- 2:00pm EDT
 
@@ -170,11 +169,13 @@ style_duo_accent(
 
 [.orange[Corrado Lanera]](mailto:CorradoLanera@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
 
+[.orange[Andrea Pedot]](mailto:AndreaPedot@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
+
 ---
 class: inverse, bottom, right, hide-count
 
 
-```{r, echo=FALSE, out.width = "50%"}
+```{r, echo=FALSE, out.width= "50%"}
 knitr::include_graphics("img/profilo_CL.jpg")
 ```
 # Find me at...
@@ -188,6 +189,26 @@ knitr::include_graphics("img/profilo_CL.jpg")
 [`r fontawesome::fa("twitter")`](https://twitter.com/corradolanera)
 [`r fontawesome::fa("telegram-plane")`](https://telegram.me/CorradoLanera)
 **@CorradoLanera**
+
+[`r fontawesome::fa("github")`](https://github.com/UBESP-DCTV)
+**@UBESP-DCTV**
+
+---
+class: inverse, bottom, right, hide-count
+
+
+```{r, echo=FALSE, out.width = "25%"}
+knitr::include_graphics("img/profilo_AP.jpg")
+```
+# Find me at...
+
+
+[`r fontawesome::fa("link")`](https://www.unipd-ubep.it/) [**www.unipd-ubep.it**](https://www.unipd-ubep.it/)
+
+[`r fontawesome::fa("mail-bulk")`](mailto:AndreaPedot@ubep.unipd.it) [**Andrea.Pedot**__.orange[@ubep.unipd.it]__](mailto:Andrea.Pedot@ubep.unipd.it)
+
+[`r fontawesome::fa("github")`](https://github.com/andredot)
+**@andredot**
 
 [`r fontawesome::fa("github")`](https://github.com/UBESP-DCTV)
 **@UBESP-DCTV**
