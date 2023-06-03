@@ -17,3 +17,7 @@ url = https://github.com/CorradoLanera/structure.04
 [submodule "private.05"]
 path = private.05
 url = https://github.com/CorradoLanera/private.05
+
+[submodule "targets.06"]
+path = targets.06
+url = https://github.com/CorradoLanera/targets.06
