@@ -412,11 +412,13 @@ class: inverse, middle, center, hide-count
 
 ---
 
-# Which one **time**?!
+# Whose **time**?!
 
 - Your time?!
+
 - My time?!
-- Boss time?!
+
+- Boss' time?!
 
 --
 
@@ -448,7 +450,7 @@ class: inverse, middle, center, hide-count
 
 # Create a project
 
-Just a bare project
+We start from just a bare project
 
 > create new RStudio project (including git and {renv} ticks)
 
@@ -458,25 +460,26 @@ Just a bare project
 
 --
 
-- lets talk about `{here}` (and a `00-setup.R` script)
+- let's talk about `{here}` (and a `00-setup.R` script)
 
 --
 
-- lets talk about `{renv}`
+- let's talk about `{renv}`
 
 --
 
-- lets talk about git
+- let's talk about git
 
 ---
 
 # Start some analysis
 
 - analysis.R
+
 - report.rmd
 
 
-> where to put input data and output files? How to reach them?
+> Where do we put input data and output files? How do we reach them?
 
 
 ---
@@ -497,11 +500,11 @@ Posit Cloud: 01 - Bare project
 
  .orange[DRY]: Do Not Repeat Yourself!
 
-> what if some input/output file changed?
+> What if some input/output file changed?
 
-> what about repeated code?
+> What about repeated code?
 
-> what if you find some bugs?
+> What if you find some bugs?
 
 
 
