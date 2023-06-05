@@ -522,11 +522,11 @@ Posit Cloud: 02 - Foldered
 
 ---
 
-# All this code together is really really ORRIBLE and confusing!
+# All this code together is really really HORRIBLE and confusing!
 
-> what about some structure?
+> what about a clear structure?
 
-> what about repeated code?
+> what about error-prone repeated code?
 
 
 ---
@@ -545,7 +545,7 @@ Posit Cloud: 03 - Changes & DRY
 
 # Data Protection...
 
-> what if I have private data (centralized, and visible by colleague only)?
+> What if I have private data (in a centralized folder, and visible by colleagues only)?
 
 > What if I would like to share the code (but not the data)?
 
@@ -570,23 +570,23 @@ class: inverse, middle, center, hide-count
 
 # .orange[Day **2**]
 
-## `laims.tempalte`
+## `laims.template`
 
 ---
 
 # Already .orange[explored] features
 
-- (`{here}`)<sup>*</sup> (your .orange[path will works] on everyone computers!)
+- (`{here}`)<sup>*</sup> (your .orange[path will work] on every computer!)
 
-- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking yours and others changes at every single lines levels)
+- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking your and others' changes at every single lines levels)
 
-- `{renv}` (packages .orange[updates will not scare] you anymore!)
+- `{renv}` (packages .orange[updates won't scare] you anymore!)
 
-- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their works, and everything as difficult as pressing `CTRL` + `SHIFT` + `T`)
+- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their behavior... you have to press nothing more than `CTRL` + `SHIFT` + `T`)
 
 - (`analysis.R`)<sup>*</sup> + `report.R` (directly inject your - __Updated__ - objects into your reports and sample code)
 
-- private data-raw/, (data/)<sup>*</sup>, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people can run] it! Still, __you can share__ a selection of derived object to anyone!)
+- private data-raw/, (data/)<sup>*</sup>, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people will be able to run it]! Still, __you can share__ a selection of derived object to anyone!)
 
 
 .footnote[[*] Why this is between parentheses it will be clear soon.] 
@@ -599,13 +599,13 @@ class: inverse, middle, center, hide-count
 
   + automatic discovering and saving of intermediate/final computed objects
 
-  + automatic discovering of functions and objects dependencies
+  + automatic discovering of functions' and objects' dependencies
   
-  + automatic run of all and only one outdated dependencies for updates
+  + one-click update of all the outdated dependencies for updates (and only those)
 
 - an `explore.R` script specifically designed to host completely **unruled** stuff, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
 
-- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage selected)
+- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage system is implemented)
 
 - professional-grade report,including logos, authorships with OrcID, citations, marginal notes, custom size for figures, and more (and maybe even more than more if powered by Quarto<sup>*</sup>)
 
@@ -613,7 +613,7 @@ class: inverse, middle, center, hide-count
 .footnote[[*] We will not talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).] 
 
 ---
-# .orange[Bonus-unexplored] feature
+# .orange[Bonus-unexplored] features
 
 - Code testing coverage: _What .orange[percentage] of "**do-something**" lines of code are effectively tested?_
 
