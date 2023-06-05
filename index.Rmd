@@ -278,21 +278,26 @@ class: inverse, middle, center, hide-count
 
 # .orange[AS]AP
 
+What usually happens...
 .orange[As Soon] As Possible
 
 - get the raw-data, manipulate them to .orange[directly fix easy-bugs]
 - .orange[do the analysis]
+
 --
-- get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some less **forgotten**?)
+
+- get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some of them **forgotten**?)
 - update (overwrite) the analysis
 - add a copy **`analysis_v2.R`** of the script (just to be sure)
---
-- found a bug, fix it (in third **`analysis_v2_ok.R`** version of analysis)
-- In doubt for a fourth execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to saving full 15 seconds (after 2h of try-and-see coding experiments)
 
 --
 
-- > **send** (the hopefully correct) report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
+- find a bug, fix it and save third **`analysis_v2_ok.R`** version of analysis)
+- Searching for a faster execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to save full 15 seconds (after 2h of try-and-see coding experiments)
+
+--
+
+- > **send** the (hopefully) correct report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
 
 --
 
@@ -300,7 +305,7 @@ class: inverse, middle, center, hide-count
 
 --
 
-- cannot give up: new version night-time (**.orange[without sleep]**)
+- But now we can not give up: produce a new version night-time (**.orange[without falling asleep]**)
 - **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP**
 
 --
@@ -325,21 +330,21 @@ class: inverse, middle, center, hide-count
 
 --
 
-The project is passed to a new analyst now
+The project is then passed to a new analyst
 
 ... **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP** ...<br>**.orange[ASAY]** (**.orange[A]s .orange[S]oon .orange[A]s .orange[Y]ESTERDAY**)
 
 --
 
 
-they cannot understand **ANYTHING** of the work already done...!
+But they can't understand **ANYTHING** of the work already done...!
 
 
-prefer to **RESTART**<br>(adding sub-folders, sub-files, sub-version, sub-plots, sub-fixes to the project!)
+So they prefer to **RESTART** from scratch<br>(adding sub-folders, sub-files, sub-version, sub-plots, sub-fixes to the project!)
 
 <br>
 
-**.orange[DONE!]**, and before diner! `r emo::ji("sunglasses")``r emo::ji("sunglasses")``r emo::ji("sunglasses")`
+**.orange[DONE!]**, and before dinner! `r emo::ji("sunglasses")``r emo::ji("sunglasses")``r emo::ji("sunglasses")`
 
 --
 
@@ -358,9 +363,9 @@ class: inverse, middle, center, hide-count
 
 "I would have spend less time if did it by myself!"
 
-Ok, I will do it!
+"Ok, I will do it!"
 
-mmm `r emo::ji("thinking")` ... which are the original/last data?! ...
+"mmm `r emo::ji("thinking")` ... which are the original/last data?!" ...
 
 --
 
