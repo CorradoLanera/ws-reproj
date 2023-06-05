@@ -658,11 +658,11 @@ As Soon .orange[As Possible]
 
 - If your results are not correct, all your _high-speed_ goes down to zero!
 
-- **Bugs will arrive**. For sure! (The greatest error you can do is to assume your code will be error-free)
+- **Bugs will be there**. For sure! (The greatest error you can do is to assume your code is going to be error-free)
 
-- Do/check .orange[only] what you really have to do/check
+- Do/check .orange[only] what you really need to do/check
 
-- Enforce .orange[standards] and .orange[style]
+- Enforce .orange[standards] and a coherent .orange[style]
 
 - Use **templates**:   .orange[Conventions] are all about making stuff **.orange[invisible]**!
 
@@ -679,15 +679,13 @@ As Soon .orange[As Possible]
 
 - Use **standard** folder and files (keep structure .orange[invisible])
 
-- .orange[Refactor] your code to extract logic by level of abstraction
-
-- (**DRY**)
+- .orange[Refactor] your code to extract logic by progressive layers of abstraction  **DRY**
 
 - Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...)
 
 - Environmental variables (from function calls!) to point to private locations
 
-- Let `{targets}` to manage project dependencies, efficient runs, and efficient storage of your objects.
+- Let `{targets}` manage project dependencies, efficient runs, and efficient storage of your objects
 
 - Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public!
 
@@ -703,7 +701,7 @@ class: inverse, center, middle, hide-count
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .left[
-_.orange[The best] is the enemy of the good!_ <br> .center[... but ...] <br> .right[_The only way to go fast is to .orange[GO WELL!]_]
+_.orange[The best] is the enemy of the good!_ <br> .center[... and ...] <br> .right[_The only way to go fast is to .orange[GO WELL!]_]
 ]
 
 .tr[
