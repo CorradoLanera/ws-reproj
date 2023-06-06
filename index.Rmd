@@ -278,21 +278,26 @@ class: inverse, middle, center, hide-count
 
 # .orange[AS]AP
 
+What usually happens...
 .orange[As Soon] As Possible
 
 - get the raw-data, manipulate them to .orange[directly fix easy-bugs]
 - .orange[do the analysis]
+
 --
-- get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some less **forgotten**?)
+
+- get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some of them **forgotten**?)
 - update (overwrite) the analysis
 - add a copy **`analysis_v2.R`** of the script (just to be sure)
---
-- found a bug, fix it (in third **`analysis_v2_ok.R`** version of analysis)
-- In doubt for a fourth execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to saving full 15 seconds (after 2h of try-and-see coding experiments)
 
 --
 
-- > **send** (the hopefully correct) report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
+- find a bug, fix it and save third **`analysis_v2_ok.R`** version of analysis)
+- Searching for a faster execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to save full 15 seconds (after 2h of try-and-see coding experiments)
+
+--
+
+- > **send** the (hopefully) correct report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
 
 --
 
@@ -300,7 +305,7 @@ class: inverse, middle, center, hide-count
 
 --
 
-- cannot give up: new version night-time (**.orange[without sleep]**)
+- But now we can not give up: produce a new version night-time (**.orange[without falling asleep]**)
 - **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP**
 
 --
@@ -325,21 +330,21 @@ class: inverse, middle, center, hide-count
 
 --
 
-The project is passed to a new analyst now
+The project is then passed to a new analyst
 
 ... **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP** ...<br>**.orange[ASAY]** (**.orange[A]s .orange[S]oon .orange[A]s .orange[Y]ESTERDAY**)
 
 --
 
 
-they cannot understand **ANYTHING** of the work already done...!
+But they can't understand **ANYTHING** of the work already done...!
 
 
-prefer to **RESTART**<br>(adding sub-folders, sub-files, sub-version, sub-plots, sub-fixes to the project!)
+So they prefer to **RESTART** from scratch<br>(adding sub-folders, sub-files, sub-version, sub-plots, sub-fixes to the project!)
 
 <br>
 
-**.orange[DONE!]**, and before diner! `r emo::ji("sunglasses")``r emo::ji("sunglasses")``r emo::ji("sunglasses")`
+**.orange[DONE!]**, and before dinner! `r emo::ji("sunglasses")``r emo::ji("sunglasses")``r emo::ji("sunglasses")`
 
 --
 
@@ -358,9 +363,9 @@ class: inverse, middle, center, hide-count
 
 "I would have spend less time if did it by myself!"
 
-Ok, I will do it!
+"Ok, I will do it!"
 
-mmm `r emo::ji("thinking")` ... which are the original/last data?! ...
+"mmm `r emo::ji("thinking")` ... which are the original/last data?!" ...
 
 --
 
@@ -407,11 +412,13 @@ class: inverse, middle, center, hide-count
 
 ---
 
-# Which one **time**?!
+# Whose **time**?!
 
 - Your time?!
+
 - My time?!
-- Boss time?!
+
+- Boss' time?!
 
 --
 
@@ -443,7 +450,7 @@ class: inverse, middle, center, hide-count
 
 # Create a project
 
-Just a bare project
+We start from just a bare project
 
 > create new RStudio project (including git and {renv} ticks)
 
@@ -453,25 +460,26 @@ Just a bare project
 
 --
 
-- lets talk about `{here}` (and a `00-setup.R` script)
+- let's talk about `{here}` (and a `00-setup.R` script)
 
 --
 
-- lets talk about `{renv}`
+- let's talk about `{renv}`
 
 --
 
-- lets talk about git
+- let's talk about git
 
 ---
 
 # Start some analysis
 
 - analysis.R
+
 - report.rmd
 
 
-> where to put input data and output files? How to reach them?
+> Where do we put input data and output files? How do we reach them?
 
 
 ---
@@ -492,11 +500,11 @@ Posit Cloud: 01 - Bare project
 
  .orange[DRY]: Do Not Repeat Yourself!
 
-> what if some input/output file changed?
+> What if some input/output file changed?
 
-> what about repeated code?
+> What about repeated code?
 
-> what if you find some bugs?
+> What if you find some bugs?
 
 
 
@@ -514,11 +522,11 @@ Posit Cloud: 02 - Foldered
 
 ---
 
-# All this code together is really really ORRIBLE and confusing!
+# All this code together is really really HORRIBLE and confusing!
 
-> what about some structure?
+> what about a clear structure?
 
-> what about repeated code?
+> what about error-prone repeated code?
 
 
 ---
@@ -537,7 +545,7 @@ Posit Cloud: 03 - Changes & DRY
 
 # Data Protection...
 
-> what if I have private data (centralized, and visible by colleague only)?
+> What if I have private data (in a centralized folder, and visible by colleagues only)?
 
 > What if I would like to share the code (but not the data)?
 
@@ -562,23 +570,23 @@ class: inverse, middle, center, hide-count
 
 # .orange[Day **2**]
 
-## `laims.tempalte`
+## `laims.template`
 
 ---
 
 # Already .orange[explored] features
 
-- (`{here}`)<sup>*</sup> (your .orange[path will works] on everyone computers!)
+- (`{here}`)<sup>*</sup> (your .orange[path will work] on every computer!)
 
-- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking yours and others changes at every single lines levels)
+- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking your and others' changes at every single lines levels)
 
-- `{renv}` (packages .orange[updates will not scare] you anymore!)
+- `{renv}` (packages .orange[updates won't scare] you anymore!)
 
-- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their works, and everything as difficult as pressing `CTRL` + `SHIFT` + `T`)
+- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their behavior... you have to press nothing more than `CTRL` + `SHIFT` + `T`)
 
 - (`analysis.R`)<sup>*</sup> + `report.R` (directly inject your - __Updated__ - objects into your reports and sample code)
 
-- private data-raw/, (data/)<sup>*</sup>, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people can run] it! Still, __you can share__ a selection of derived object to anyone!)
+- private data-raw/, (data/)<sup>*</sup>, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people will be able to run it]! Still, __you can share__ a selection of derived object to anyone!)
 
 
 .footnote[[*] Why this is between parentheses it will be clear soon.] 
@@ -591,13 +599,13 @@ class: inverse, middle, center, hide-count
 
   + automatic discovering and saving of intermediate/final computed objects
 
-  + automatic discovering of functions and objects dependencies
+  + automatic discovering of functions' and objects' dependencies
   
-  + automatic run of all and only one outdated dependencies for updates
+  + one-click update of all the outdated dependencies for updates (and only those)
 
 - an `explore.R` script specifically designed to host completely **unruled** stuff, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
 
-- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage selected)
+- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage system is implemented)
 
 - professional-grade report,including logos, authorships with OrcID, citations, marginal notes, custom size for figures, and more (and maybe even more than more if powered by Quarto<sup>*</sup>)
 
@@ -605,7 +613,7 @@ class: inverse, middle, center, hide-count
 .footnote[[*] We will not talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).] 
 
 ---
-# .orange[Bonus-unexplored] feature
+# .orange[Bonus-unexplored] features
 
 - Code testing coverage: _What .orange[percentage] of "**do-something**" lines of code are effectively tested?_
 
@@ -650,11 +658,11 @@ As Soon .orange[As Possible]
 
 - If your results are not correct, all your _high-speed_ goes down to zero!
 
-- **Bugs will arrive**. For sure! (The greatest error you can do is to assume your code will be error-free)
+- **Bugs will be there**. For sure! (The greatest error you can do is to assume your code is going to be error-free)
 
-- Do/check .orange[only] what you really have to do/check
+- Do/check .orange[only] what you really need to do/check
 
-- Enforce .orange[standards] and .orange[style]
+- Enforce .orange[standards] and a coherent .orange[style]
 
 - Use **templates**:   .orange[Conventions] are all about making stuff **.orange[invisible]**!
 
@@ -671,15 +679,13 @@ As Soon .orange[As Possible]
 
 - Use **standard** folder and files (keep structure .orange[invisible])
 
-- .orange[Refactor] your code to extract logic by level of abstraction
-
-- (**DRY**)
+- .orange[Refactor] your code to extract logic by progressive layers of abstraction  **DRY**
 
 - Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...)
 
 - Environmental variables (from function calls!) to point to private locations
 
-- Let `{targets}` to manage project dependencies, efficient runs, and efficient storage of your objects.
+- Let `{targets}` manage project dependencies, efficient runs, and efficient storage of your objects
 
 - Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public!
 
@@ -695,7 +701,7 @@ class: inverse, center, middle, hide-count
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .left[
-_.orange[The best] is the enemy of the good!_ <br> .center[... but ...] <br> .right[_The only way to go fast is to .orange[GO WELL!]_]
+_.orange[The best] is the enemy of the good!_ <br> .center[... and ...] <br> .right[_The only way to go fast is to .orange[GO WELL!]_]
 ]
 
 .tr[
