@@ -20,14 +20,23 @@ and codes for easier understanding. Whether you are a
 beginner or have intermediate experience in R, this workshop
 will help you take your data analysis to the next level.
 
-## Dates
-Day 1: 2023/05/16 - 5:00 PM -- 7:00 PM (CEST)
+## Event
+[R/Medicine Virtual Conference 2023](https://events.linuxfoundation.org/r-medicine/), taking place from June 5-9, 2023, in Eastern Daylight Time (EDT, GMT-4).
 
-Day 2: 2023/05/18 - 5:00 PM -- 7:00 PM (CEST)
+R/Medicine 2023 Virtual Conference is using [Sched](https://rmed2023a.sched.com/) for the official event schedule & directory.
 
-## (Free) registration to the event
+[Workshop](https://sched.co/1MwSI): Presented live – 3 hours of interactive learning with active coding, taking place June 6, 2023, 11:00am - 2:00pm EDT.
 
-To participate, click to the [Teams event registration](https://bit.ly/teams-registration-ws-reproj).
+
+## Registration to the event
+
+To participate:
+
+- [Register now](https://events.linuxfoundation.org/r-medicine/register/).
+
+- [Connect](https://sched.co/1MwSI) to the workshop on [Sched](https://rmed2023a.sched.com/)
+
+- Join the Zoom meeting from there.
 
 ## Slides
 [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/)
@@ -35,13 +44,13 @@ To participate, click to the [Teams event registration](https://bit.ly/teams-reg
 ## Rstudio Cloud
 If you cannot access to a local version of Posit RStudio IDE, you can (freely) use the following [RStudio Workspace](https://bit.ly/positcloud-ws-reproj) on Posit Cloud.[^1]
 
-Please note that there are some limitation on the cloud space (i.e., hardware: 0.5 CPU + 1 GB RAM; workshop: no git + no external private folders).
+Please note that there are some limitation set on the cloud space (i.e., hardware: 0.5 CPU + 1 GB RAM; workshop: no git + no external private folders).
 
-## Day 1
+## Workshop
 
 If you have a local installation of Posit RStudio IDE, you can follow each step of the workshop running the following commands, which download a project with the final results ready to go for "the next" step.
 
-Please note: following the workshop, you can start from the first bare project, and continue to aupdate it incrementally up to the last one without needs to download the intermediate stages (and one of the workshop aims is to make you able to do exactly that!).
+Please note: following the workshop, you can start from the first bare project, and continue to update it incrementally up to the last one without needs to download the intermediate stages (and one of the workshop aims is to make you able to do exactly that!).
 
 ```r
 # install.packages("usethis")
@@ -78,36 +87,30 @@ Please note: following the workshop, you can start from the first bare project, 
   usethis::use_course("CorradoLanera/private.05")
   ```
 
-## Day 2
+- [targets.06](https://github.com/CorradoLanera/targets.06)
+ 
+  ```r
+  usethis::use_course("CorradoLanera/targets.06")
+  ```
 
-- > TO BE ADDED
 
 ## Code of Conduct
 
-The ws-reproj workshop will be conducted with the [Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html). By participating to the workshop, you agree to abide by its terms.
-
-### Summary View
-I am dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this workshop, participants accept to abide by The Carpentries’ Code of Conduct and accept the procedures by which any Code of Conduct incidents are resolved.
-
-**Any form of behaviour to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct.**
-
-In order to foster a positive and professional learning environment we encourage the following kinds of behaviours in all platforms and events:
-
-- Use welcoming and inclusive language
-
-- Be respectful of different viewpoints and experiences
-
-- Gracefully accept constructive criticism
-
-- Focus on what is best for the community
-
-- Show courtesy and respect towards other community members
-
-If you believe someone is violating the Code of Conduct, I ask that you report it to me, [Corrado Lanera](mailto:Corrado.Lanera@ubep.unipd.it) \<Corrado.Lanera@ubep.unipd.it\>, and I will take the appropriate action to address the situation.
-
-> Please note, I am not a Carpentries instructor (yet :-)), but I enforce their Code of Conduct principles in my workshops and events. So, currently, my e-mail address is the best option I can offer to report violation to the Code of Conduct. If, for any reason, you believe the subject of the violation it's me, you can write to the responsible of our administration [Cristiana Vettori](Cristiana.Vettori@ubep.unipd.it) \<Cristiana.Vettori@ubep.unipd.it\> directly to report the incident. Thank you.
+Please read and abide by the Code of Conduct, which can be found [here](https://events.linuxfoundation.org/r-medicine/attend/code-of-conduct/). The Code of Conduct is strictly enforced. Speakers especially review this Code of Conduct and are careful to be inclusive in the words and images used during their presentations.
 
 
+## Inclusive Speaker Orientation Online Course
+In collaboration with the National Center for Women in Technology (NCWIT), the Linux Foundation has created an [online course](https://training.linuxfoundation.org/content/inclusive-speaker-orientation) designed to teach the viewer about inclusion, diversity, and unconscious bias. We highly recommend all of our speakers watch the course to learn tips/tools to use when speaking to encourage inclusivity in presentations and messaging. 
+
+
+## Join the Conversation!  
+Be sure to use the official `#RMed23` in your social posts.
+
+
+## Questions
+
+If you have any questions regarding the event, please don't hesitate to contact [cfp@linuxfoundation.org](mailto:cfp@linuxfoundation.org). 
+If you have any question regarding the workshop, please don't hesitate to contact [me](mailto:corrado.lanera@gmail.com).
 
 [^1]: It needs the creation of a (free) Posit account.
 

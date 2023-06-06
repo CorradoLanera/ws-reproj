@@ -16,7 +16,7 @@
     <link href="index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.css" rel="stylesheet" />
     <script src="index_files/xaringanExtra-clipboard/xaringanExtra-clipboard.js"></script>
     <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x48e97f82d364d01a0b891cc46872acf","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"a2ab44b4842942bfbfdadaa0b6fcebdf","expires":1}</script>
     <script src="index_files/himalaya/himalaya.js"></script>
     <script src="index_files/js-cookie/js.cookie.js"></script>
     <link href="index_files/editable/editable.css" rel="stylesheet" />
@@ -150,13 +150,14 @@ class: center, middle, bg_title, hide-count
 # **Efficient Reproducibility in R**&lt;br&gt;**.orange[A Journey from Patchworks to Projects]**
 
 &lt;br&gt;
-&lt;br&gt;
 
-**LAIMS workshops** - Padova/UBEP + Teams, 2023/05/16-18
+[**Workshop**](https://rmed2023a.sched.com/event/1MwSI/a-journey-from-patchworks-to-projects-a-ready-to-use-project-template-to-popularize-reproducible-research-pipelines-in-everyday-projects-corrado-lanera-andrea-pedot-unit-of-biostatistics-epidemiology-and-public-health-university-of-padova) - Live on Zoom - 2023/06/06 11:00am -- 2:00pm EDT
 
-UBEP Seminars
+[.orange[R]/.orange[Medicine]](https://events.linuxfoundation.org/r-medicine/) 2023/06/05-09 
 
-Corrado Lanera | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
+[.orange[Corrado Lanera]](mailto:CorradoLanera@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
+
+[.orange[Andrea Pedot]](mailto:AndreaPedot@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
 
 ---
 class: inverse, bottom, right, hide-count
@@ -178,6 +179,55 @@ class: inverse, bottom, right, hide-count
 [<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/UBESP-DCTV)
 **@UBESP-DCTV**
 
+---
+class: inverse, bottom, right, hide-count
+
+
+&lt;img src="img/profilo_AP.jpg" width="25%" /&gt;
+# Find me at...
+
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>](https://www.unipd-ubep.it/) [**www.unipd-ubep.it**](https://www.unipd-ubep.it/)
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"/></svg>](mailto:AndreaPedot@ubep.unipd.it) [**Andrea.Pedot**__.orange[@ubep.unipd.it]__](mailto:Andrea.Pedot@ubep.unipd.it)
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/andredot)
+**@andredot**
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/UBESP-DCTV)
+**@UBESP-DCTV**
+
+
+---
+
+# How to .orange[follow] the workshops
+
+#### Resources:
+
+- .orange[Slides]: [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/#1)
+- **Questions** @Zoom: .orange[Q/A] &amp; .orange[Breakout Room] w/ **Andrea Pedot**
+
+#### Coding:
+
+1. If you like it **.orange[local]**: code **on your system**
+
+  - At any stage you can:&lt;br&gt;
+  `usethis::use_course("CorradoLanera/&lt;stage name&gt;")`:
+  - `&lt;stage name&gt;`s:
+      - `bare.proj.01`
+      - `foldered.02`
+      - `changes.dry.03`
+      - `structure.04`
+      - `private.05`
+      - `targets.06`
+
+3. If you like it **.orange[remote]**: code (free of charge) **on Posit Cloud Workspace**:&lt;br&gt; [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
+
+
+&lt;small&gt;
+.right[Whole .orange[project]: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
+]
+&lt;/small&gt;
 
 ---
 class: hide-count
@@ -185,118 +235,69 @@ class: hide-count
 
 # .orange[Outline]
 
-- Intro: definition of .orange[ASAP], the anatomy of a **patchwork**
+- **.underline[Setup]**: Slides, Posit Cloud Workspace, repository
 
-- Program: start .orange[easy], do **not waste time**, look at possible futures
+- **.underline[Intro]**: definition of **.orange[AS]**AP, the anatomy of a **.orange[patchwork]**
 
-- Day 1:
-  - Setup an **R**/**RStudio** project: `{here}`, `{renv}`, and .orange[git].
-  - Do they talk you about **folders**?
-  - What if **something change**? .orange[DRY]: Do Not Repeat Yourself!
+- **.underline[Program]**: start **.orange[slow]**, do not waste **.orange[_time_]**
+
+- **.underline[Step-by-step]**:
+  - Setup an **R**/**RStudio** project: git, `{renv}`, and `{here}`.
+  - Are you ready to **.orange[share]** and **.orange[collaborate]**? (welcome **GitHub**)
+  - What about **.orange[folders]**?
+  - What about **.orange[changes]**?
       + Data / **objects** (versions?)
-      + Code / Functions (.orange[refactor]?)
+      + Code / **Functions** (isolation, abstractions?)
       + **Bugs** (tests?)
-  - Please, give me some .orange[structure]! The magic of `DESCRIPTION`
-  - Oops! I have (internal) .orange[private data] for my (public) project!
-  - Are you ready to .orange[share] and collaborate? (welcome **GitHub**)
-
-- Day 2:
-  - Welcome `{laims.template}`
-  - **Conventions** are all about making stuff .orange[invisible]!
+  - Please, give me some **.orange[structure]**! The magic of the `DESCRIPTION` file
+  - Oops! I have internal (**.orange[private]**) data for my (**.orange[public]**) project!
   - working with `{targets}`
 
-- Outro: definition of .orange[ASAP], the anatomy of a **project**
+- **.underline[All-in-one template]**: welcome [**`{laims.analysis}`**](https://github.com/UBESP-DCTV/laims.analysis)
 
-
----
-class: hide-count
-
-# Code of Conduct
-
-The workshop will be conducted with a .orange[Code of Conduct]. By participating to the workshop, **you agree to abide by its terms**.
-
-Any form of behaviour to .orange[exclude], .orange[intimidate], or .orange[cause discomfort] **is a violation** of the Code of Conduct.
-
-In order to foster a .orange[positive and professional] learning environment I encourage the following kinds of behaviours:
-
-  - Use **welcoming** and **inclusive** language
-  - Be **respectful** of different viewpoints and experiences
-  - Gracefully **accept** constructive criticism
-  - Focus on what is **best for the community**
-  - Show **courtesy** and **respect** towards other community members
-
-If you believe someone is violating the Code of Conduct, I ask that you .orange[report it to me] and **I will take the appropriate actions** to address the situation.
-
-&gt; If you believe **I am violating the Code of Conduct**, you can write to the responsible of our administration (&lt;Cristiana.Vettori@ubep.unipd.it&gt;) to report the incident.
-
-.center[**Thank .orange[you]!**]
-
-
----
-
-# How to follow the workshops
-
-1. Do it by yourself
-
-2. At any stage you can:
-  `usethis::use_course("CorradoLanera/&lt;name&gt;.&lt;stage&gt;")`
-
-3. If you cannot (don't like) to run locally:
-  Posit Cloud (free for you) Workspace: [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
- 
- 
-4. Moves the **red** sticky note forward, if I am too fast
-5. Moves the .orange[Yellow] sticky note forward, if I am too slow
-6. For questions, rise your hands if you are not typing on a laptop, or put a sticky note on the rear of the laptop otherwise.
-
-### Resources
-
-- .orange[Slides]: [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/#1)
-- Posit .orange[Cloud Workspace]: [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
-- Whole .orange[project]: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
+- **.underline[Outro]**: definition of AS**.orange[AP]**, the anatomy of a **.orange[project]**
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Intro: **ASAP**]
+# Intro: **.orange[AS]AP**
+
  
 
 ---
 
 # .orange[AS]AP
 
+What usually happens...
 .orange[As Soon] As Possible
 
-- do the analysis
-
+- get the raw-data, manipulate them to .orange[directly fix easy-bugs]
+- .orange[do the analysis]
 --
 
-- update (overwrite) data
-
+- get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some of them **forgotten**?)
 - update (overwrite) the analysis
-
-- add a copy of the script (just to be sure)
-
+- add a copy **`analysis_v2.R`** of the script (just to be sure)
 --
 
-- fix bug (in second version of analysis)
-
-- add an additional faster version (saving 14ms after 2h of hard-coding)
-
+- find a bug, fix it and save third **`analysis_v2_ok.R`** version of analysis
+- Searching for a faster execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to save full 15 seconds (after 2h of try-and-see coding experiments)
 --
 
-- send preliminary (hopefully super-trusted correct) report
-
+- &gt; **send** the (hopefully) correct report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
 --
 
-- .orange[**BUG** reported by the boss!] (... it's a **BOGSS**)
-
+- &gt; get a .orange[**BUG** reported by the **BOSS**!] (... it's a **.orange[_BOGSS_]** 😨🤦😭)
 --
 
-- cannot give up to the shame: new version night-time without sleep
-- ASAP ASAP ASAP ASAP
-- (new files, new versions, new names, new plots)
-- SENT!
+- But now we can not give up: produce a new version night-time (**.orange[without falling asleep]**)
+- **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP**
+--
+
+.center[_... many new-files, new-versions, new-names, new-plots, new-fixes later..._]
+--
+&lt;br&gt;
+.center[**SENT!**]
 
 ---
 class: inverse, middle, center, hide-count
@@ -307,67 +308,64 @@ class: inverse, middle, center, hide-count
 
 ...
 
----
-class: middle, center
+--
 
-.orange[**BOGSS**]
+**.orange[_BOGSS_]** 😨🤦😭
 
 --
 
-finally shamed
+The project is then passed to a new analyst
 
-project passed to new analyst
-
-... ASAP ASAP ASAP... ASAY (**As Soon As YESTERDAY**)
+... **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP** ...&lt;br&gt;**.orange[ASAY]** (**.orange[A]s .orange[S]oon .orange[A]s .orange[Y]ESTERDAY**)
 
 --
 
+
+But they can't understand **ANYTHING** of the work already done...!
+
+
+So they prefer to **RESTART** from scratch&lt;br&gt;(adding sub-folders, sub-files, sub-version, sub-plots, sub-fixes to the project!)
+
 &lt;br&gt;
 
-cannot understand ANYTHING of the work already done! (...what a of newbe!)
+**.orange[DONE!]**, and before dinner! 😎😎😎
 
+--
 
-RESTART (adding sub-folders, sub-files, sub-version, sub-something to the project!)
+...
 
-&lt;br&gt;
+--
 
-.orange[DONE] before diner!
+...
+
+--
+
+**.orange[_BOGSS_]** 😱🤦😭
 
 ---
 class: inverse, middle, center, hide-count
 
-...
+#### BOSS:
+
+"I would have spend less time if did it by myself!"
+
+"Ok, I will do it!"
+
+"mmm 🤔 ... which are the original/last data?!" ...
 
 --
 
 ...
 
----
-class: middle, center
-
-.orange[**BOGSS**]
-
 --
-
-&lt;br&gt;
-
-BOSS: "I would have spend less time if did it by myself!"
-
-BOSS: Ok, I will do it!
-
-BOSS: ... which are the original/last data?! ...
-
---
-
-&lt;br&gt;
 
 ...
 
-
 --
 
-&lt;br&gt;
-BOSS: ChatGPT, write a report that appear to correctly assess the analyses!
+&lt;img src="img/gpt_help_me.png" width="100%"/&gt;
+
+😨🤦😭
 
 --
 
@@ -385,16 +383,9 @@ class: middle, center
 &lt;img src="img/tidy-red.png" width="100%"/&gt;
 
 ---
-class: inverse, middle, center, hide-count
-
-Time pass...
-
----
 class: middle, center
 
 &lt;img src="img/time-red.png" width="100%"/&gt;
-
-
 
 
 ---
@@ -405,41 +396,77 @@ class: inverse, middle, center, hide-count
 
 ---
 
-# Which one **time**?!
+# Whose **time**?!
 
 - Your time?!
+
 - My time?!
-- Boss time?!
+
+- Boss' time?!
 
 --
 
 &lt;br&gt;
 
-.center[.orange[Project time] =
+
+**.center[.orange[Project time] = ]**
 
 `$$\sum_{i = 1}^{correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i(by = p, for = t, include\_breaks = TRUE)\right)$$`
-]
+
 --
 &lt;br&gt;
 &lt;br&gt;
 
 .center[
-`$$ASAP := argmin(Project\ time)$$`
-(.orange[CL] **personal** definition!)
+**AS.orange[AP]** `\(:= argmin(Project\ time)\)`
+
+(**.orange[CL] personal** definition!)
 
 ]
+
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Day **1**]
+# .orange[Start **slow**]
+ 
+
+---
+
+# **If** you need it, .orange[do it]!
+
+- Don't do things you don't need &gt; **you will .orange[waste] time**!
+
+- Be prepared to add features/components &gt; **you will .orange[save] time**!
+
+--
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+In the following step-by-step project development, we aim to show how to add features accordingly to sequential requirements.
+
+ - change **.orange[the order]** at your convenience
+ - change **.orange[the tools]** at your convenience (or as they will improve/change)
+ - don't implement stages you don't need (until you need them...!)
+
+
+&gt; This won't be a workshop about the tools we will show. It will be a workshop about the processes, the structures, and the motivations in using them.
+
+---
+class: inverse, middle, center, hide-count
+
+# **.orange[Step**-by-**step]**
 
 
 ---
 
+
 # Create a project
 
-Just a bare project
+We start from just a bare project
 
 &gt; create new RStudio project (including git and {renv} ticks)
 
@@ -449,25 +476,26 @@ Just a bare project
 
 --
 
-- lets talk about `{here}` (and a `00-setup.R` script)
+- let's talk about `{here}` (and a `00-setup.R` script)
 
 --
 
-- lets talk about `{renv}`
+- let's talk about `{renv}`
 
 --
 
-- lets talk about git
+- let's talk about git
 
 ---
 
 # Start some analysis
 
 - analysis.R
+
 - report.rmd
 
 
-&gt; where to put input data and output files? How to reach them?
+&gt; Where do we put input data and output files? How do we reach them?
 
 
 ---
@@ -486,11 +514,14 @@ Posit Cloud: 01 - Bare project
 
 # Changes?
 
-&gt; what if some input/output file changed?
+ .orange[DRY]: Do Not Repeat Yourself!
 
-&gt; what about repeated code?
+&gt; What if some input/output file changed?
 
-&gt; what if you find some bugs?
+&gt; What about repeated code?
+
+&gt; What if you find some bugs?
+
 
 
 ---
@@ -507,11 +538,11 @@ Posit Cloud: 02 - Foldered
 
 ---
 
-# All this code together is really really ORRIBLE and confusing!
+# All this code .orange[together] is really really HORRIBLE and .orange[confusing]!
 
-&gt; what about some structure?
+&gt; what about a clear structure?
 
-&gt; what about repeated code?
+&gt; what about error-prone repeated code?
 
 
 ---
@@ -530,7 +561,7 @@ Posit Cloud: 03 - Changes &amp; DRY
 
 # Data Protection...
 
-&gt; what if I have private data (centralized, and visible by colleague only)?
+&gt; What if I have private data (in a centralized folder, and visible by colleagues only)?
 
 &gt; What if I would like to share the code (but not the data)?
 
@@ -549,65 +580,18 @@ Posit Cloud: 04 - structure
 
 
 
- 
----
-class: inverse, middle, center, hide-count
-
-# .orange[Day **2**]
-
-## `laims.tempalte`
 
 ---
+# Clear pipeline and automation
 
-# Already .orange[explored] features
++ automatic discovering and saving of intermediate/final computed objects
 
-- (`{here}`)&lt;sup&gt;*&lt;/sup&gt; (your .orange[path will works] on everyone computers!)
-
-- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking yours and others changes at every single lines levels)
-
-- `{renv}` (packages .orange[updates will not scare] you anymore!)
-
-- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their works, and everything as difficult as pressing `CTRL` + `SHIFT` + `T`)
-
-- (`analysis.R`)&lt;sup&gt;*&lt;/sup&gt; + `report.R` (directly inject your - __Updated__ - objects into your reports and sample code)
-
-- private data-raw/, (data/)&lt;sup&gt;*&lt;/sup&gt;, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people can run] it! Still, __you can share__ a selection of derived object to anyone!)
-
-
-.footnote[[*] Why this is between parentheses it will be clear soon.] 
-
-
----
-# New .orange[(not yet) explored] features
-
-- powered by `{targets}`:
-
-  + automatic discovering and saving of intermediate/final computed objects
-
-  + automatic discovering of functions and objects dependencies
++ automatic discovering of functions' and objects' dependencies
   
-  + automatic run of all and only one outdated dependencies for updates
-
-- an `explore.R` script specifically designed to host completely **unruled** stuff, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
-
-- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage selected)
-
-- professional-grade report,including logos, authorships with OrcID, citations, marginal notes, custom size for figures, and more (and maybe even more than more if powered by Quarto&lt;sup&gt;*&lt;/sup&gt;)
++ automatic update of all the outdated dependencies for updates (and only those)
 
 
-.footnote[[*] We will not talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).] 
-
----
-# .orange[Bonus-unexplored] feature
-
-- Code testing coverage: _What .orange[percentage] of "**do-something**" lines of code are effectively tested?_
-
-- Lint checks: _How .orange[good] is your code "**statically**"?_
-
-- GitHub Action: _.orange[automatic] execution of tests/lint/CRAN checks at **every push**!_
-
-- R-package structure: _you can make exported functions available as a **ready-to-use** .orange[r-package]._
-
+&gt; let's talk about `{targets}`:
 
 
 ---
@@ -615,22 +599,57 @@ class: inverse, middle, center, hide-count
 
 .orange[Live session]
 
-Take as reference:
+Start from:
 
 `usethis::use_course("CorradoLanera/private.05")`
 
-or
-
 Posit Cloud: 05 - private
 
-
-and go to [https://github.com/UBESP-DCTV/laims.analysis](https://github.com/UBESP-DCTV/laims.analysis)&lt;br&gt;(You will need a (free) GitHub account!)
 
 
 ---
 class: inverse, middle, center, hide-count
 
-# .orange[Outro: **ASAP** and recap]
+.orange[Final result]
+
+Take as reference:
+
+`usethis::use_course("CorradoLanera/targets.06")`
+
+or
+
+Posit Cloud: 06 - targets
+
+
+
+---
+# A comprehensive .orange[template]
+
+[https://github.com/UBESP-DCTV/laims.analysis](https://github.com/UBESP-DCTV/laims.analysis) &lt;small&gt;- _You will need a (free) GitHub account_&lt;/small&gt;
+
+All explored features, plus:
+
+- an **.orange[`explore.R`]** script specifically designed to host completely **unruled** exploratory code, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
+
+- **.orange[`targets` objects directly usable]**: on computations, reports, and tests (maintaining their privacy if shared storage system is implemented)
+
+- an **.orange[Rmd report template]**: including logos, authorship with OrcID, citations, marginal notes, custom size for figures, ... (and more if powered by Quarto&lt;sup&gt;*&lt;/sup&gt;)
+- **.orange[test coverage]**: _**Percentage** of "**do-something**" code tested._
+- **.orange[lint checks]**: _How **good** is your code "**statically**"?_
+- **.orange[GitHub Action]**: _**automatic** execution of tests/lint/CRAN checks at **every push**!_
+- **.orange[R-package structure]**: _make functions available as a **ready-to-use** r-package._
+
+&lt;small&gt;.right[
+.footnote[[*] We didn't talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).]
+]&lt;/small&gt;
+
+
+
+
+---
+class: inverse, middle, center, hide-count
+
+# Outro: **AS.orange[AP]**
 
 
 ---
@@ -643,13 +662,14 @@ As Soon .orange[As Possible]
 
 - If your results are not correct, all your _high-speed_ goes down to zero!
 
-- **Bugs will arrive**. For sure! (The greatest error you can do is to assume your code will be error-free)
+- **Bugs will be there**. For sure! &lt;br&gt;The greatest error you can do is to assume your code is going to be error-free
 
-- Do/check .orange[only] what you really have to do/check
+- Do/check .orange[only] what you really need to do/check
 
-- Enforce .orange[standards] and .orange[style]
+- Enforce .orange[standards] and a coherent .orange[style]
 
-- Use **templates**
+- Use **templates**:   .orange[Conventions] are all about making stuff **.orange[invisible]**!
+
 
 ---
 
@@ -658,28 +678,28 @@ As Soon .orange[As Possible]
 - Track
   + changes (git)
   + environment (`{renv}`)
-
 - Use portable paths (`{here}`)
 
 - Use **standard** folder and files (keep structure .orange[invisible])
 
-- .orange[Refactor] your code to extract logic by level of abstraction
-
-- (**DRY**)
+- .orange[Refactor] your code to extract logic by progressive layers of abstraction  **DRY**
 
 - Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...)
 
-- Environmental variables (from function calls!) to point to private locations
+- Environmental vars (from function call, `.gitignore`d) for private locations
 
-- Let `{targets}` to manage project dependencies, efficient runs, and efficient storage of your objects.
+- Let `{targets}` manage project dependencies, efficient runs, and efficient storage of your objects
 
-- Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public!
+- Use GitHub (or similar) to share code (not data,  not secrets!) with collaborators, journals, public, ...!
 
-.center[**If you need all of above, use templates! (like the `laims.analysis` one)**]
+
+.center[**If you know you need all of above, use templates! Like .orange[`laims.analysis`].**]
 
 --
 
-.center[Go for `\(ASAP := argmin(Project\ time)\)`!!]
+.center[
+Go for AS**.orange[AP]** `\(:= argmin(Project\ time)\)` !!
+]
 
 ---
 class: inverse, center, middle, hide-count
@@ -687,7 +707,7 @@ class: inverse, center, middle, hide-count
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .left[
-_.orange[The best] is the enemy of the good!_ &lt;br&gt; .center[... but ...] &lt;br&gt; .right[_The only way to go fast is to .orange[GO WELL!]_]
+_**.orange[The best]** is the enemy of the good!_ &lt;br&gt; .center[... and ...] &lt;br&gt; .right[_The only way to go fast is to **.orange[go well!]**_]
 ]
 
 .tr[
@@ -695,27 +715,32 @@ _.orange[The best] is the enemy of the good!_ &lt;br&gt; .center[... but ...] &l
 ]
 ]
 
-&lt;br&gt;
 
 # Thank .orange[you] for the attention!
 
 
-Slides: [https://CorradoLanera.github.io/ws-reproj/](https://CorradoLanera.github.io/ws-reproj/#1)
+Slides: [https://CorradoLanera.github.io/ws-reproj](https://CorradoLanera.github.io/ws-reproj/#1)
 
 Repo: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
 
 &lt;br&gt;
 
 
+
 [<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>](https://www.unipd-ubep.it/) [**www.unipd-ubep.it**](https://www.unipd-ubep.it/) | 
-[<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"/></svg>](mailto:Corrado.Lanera@ubep.unipd.it) [**Corrado.Lanera@ubep.unipd.it**](mailto:Corrado.Lanera@ubep.unipd.it)
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/UBESP-DCTV)
+**@UBESP-DCTV**
+
+[<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"/></svg>](mailto:Corrado.Lanera@ubep.unipd.it) [**.orange[Corrado.Lanera]@ubep.unipd.it**](mailto:Corrado.Lanera@ubep.unipd.it) | 
+[<svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 0C110.3 0 96 14.3 96 32V224h96V192c0-35.3 28.7-64 64-64H480V32c0-17.7-14.3-32-32-32H128zM256 160c-17.7 0-32 14.3-32 32v32h96c35.3 0 64 28.7 64 64V416H576c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32H256zm240 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H496c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM64 256c-17.7 0-32 14.3-32 32v13L187.1 415.9c1.4 1 3.1 1.6 4.9 1.6s3.5-.6 4.9-1.6L352 301V288c0-17.7-14.3-32-32-32H64zm288 84.8L216 441.6c-6.9 5.1-15.3 7.9-24 7.9s-17-2.8-24-7.9L32 340.8V480c0 17.7 14.3 32 32 32H320c17.7 0 32-14.3 32-32V340.8z"/></svg>](mailto:Andrea.Pedot@ubep.unipd.it) [**.orange[Andrea.Pedot]@ubep.unipd.it**](mailto:Andrea.Pedot@ubep.unipd.it)
 
 [<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/corradolanera)
 [<svg aria-hidden="true" role="img" viewBox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>](https://twitter.com/corradolanera)
 [<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>](https://telegram.me/CorradoLanera)
 **@CorradoLanera** | 
-[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/UBESP-DCTV)
-**@UBESP-DCTV**
+[<svg aria-hidden="true" role="img" viewBox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>](https://github.com/andredot)
+**@andredot**
+
 
 
     </textarea>
