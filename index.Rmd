@@ -215,12 +215,43 @@ knitr::include_graphics("img/profilo_AP.jpg")
 
 
 ---
+
+# How to .orange[follow] the workshops
+
+#### Resources:
+
+- .orange[Slides]: [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/#1)
+- **Questions** @Zoom: .orange[Q/A] & .orange[Breakout Room] w/ **Andrea Pedot**
+
+#### Coding:
+
+1. If you like it **.orange[local]**: code **on your system**
+
+  - At any stage you can:<br>
+  `usethis::use_course("CorradoLanera/<stage name>")`:
+  - `<stage name>`s:
+      - `bare.proj.01`
+      - `foldered.02`
+      - `changes.dry.03`
+      - `structure.04`
+      - `private.05`
+      - `targets.06`
+
+3. If you like it **.orange[remote]**: code (free of charge) **on Posit Cloud Workspace**:<br> [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
+
+
+<small>
+.right[Whole .orange[project]: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
+]
+</small>
+
+---
 class: hide-count
 
 
 # .orange[Outline]
 
-- **.underline[Setup]**: Slides, repository, Posit Cloud Workspace, Sched
+- **.underline[Setup]**: Slides, Posit Cloud Workspace, repository
 
 - **.underline[Intro]**: definition of **.orange[AS]**AP, the anatomy of a **.orange[patchwork]**
 
@@ -243,35 +274,10 @@ class: hide-count
 - **.underline[Outro]**: definition of AS**.orange[AP]**, the anatomy of a **.orange[project]**
 
 ---
-
-# How to .orange[follow] the workshops
-
-#### Resources:
-
-- .orange[Slides]: [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/#1)
-- Whole .orange[project]: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
-- **Questions** @Zoom: .orange[Q/A] & .orange[Breakout Room] w/ **Andrea Pedot**
-
-#### Coding:
-
-1. If you like it **.orange[local]**: code **on your system**
-
-  - At any stage you can:<br>
-  `usethis::use_course("CorradoLanera/<stage name>")`:
-  - `<stage name>`:
-      - `bare.proj.01`
-      - `foldered.02`
-      - `changes.dry.03`
-      - `structure.04`
-      - `private.05`
-      - `targets.06`
-
-3. If you like it **.orange[remote]**: code (free of charge) **on Posit Cloud Workspace**:<br> [https://bit.ly/positcloud-ws-reproj](https://bit.ly/positcloud-ws-reproj)
-
----
 class: inverse, middle, center, hide-count
 
 # Intro: **.orange[AS]AP**
+
  
 
 ---
@@ -283,31 +289,25 @@ What usually happens...
 
 - get the raw-data, manipulate them to .orange[directly fix easy-bugs]
 - .orange[do the analysis]
-
 --
 
 - get updated data, overwrite previous, directly manipulate them to fix easy bugs (...some more **added**? some of them **forgotten**?)
 - update (overwrite) the analysis
 - add a copy **`analysis_v2.R`** of the script (just to be sure)
-
 --
 
-- find a bug, fix it and save third **`analysis_v2_ok.R`** version of analysis)
+- find a bug, fix it and save third **`analysis_v2_ok.R`** version of analysis
 - Searching for a faster execution, add an additional **`analysis_v2_ok_faster.R`** faster version (surely identical, console-checked!) to save full 15 seconds (after 2h of try-and-see coding experiments)
-
 --
 
 - > **send** the (hopefully) correct report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
-
 --
 
 - > get a .orange[**BUG** reported by the **BOSS**!] (... it's a **.orange[_BOGSS_]** `r emo::ji("fear")``r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`)
-
 --
 
 - But now we can not give up: produce a new version night-time (**.orange[without falling asleep]**)
 - **.orange[AS]AP.orange[AS]AP.orange[AS]AP.orange[AS]AP**
-
 --
 
 .center[_... many new-files, new-versions, new-names, new-plots, new-fixes later..._]
@@ -353,6 +353,8 @@ So they prefer to **RESTART** from scratch<br>(adding sub-folders, sub-files, su
 --
 
 ...
+
+--
 
 **.orange[_BOGSS_]** `r emo::ji("fear")``r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`
 
@@ -402,8 +404,6 @@ class: middle, center
 <img src="img/time-red.png" width="100%"/>
 
 
-
-
 ---
 class: inverse, middle, center, hide-count
 
@@ -424,10 +424,11 @@ class: inverse, middle, center, hide-count
 
 <br>
 
-**.center[.orange[Project time]** =
+
+**.center[.orange[Project time] = ]**
 
 $$\sum_{i = 1}^{correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i(by = p, for = t, include\_breaks = TRUE)\right)$$
-]
+
 --
 <br>
 <br>
@@ -438,6 +439,37 @@ $$\sum_{i = 1}^{correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i
 (**.orange[CL] personal** definition!)
 
 ]
+
+
+---
+class: inverse, middle, center, hide-count
+
+# .orange[Start **slow**]
+ 
+
+---
+
+# **If** you need it, .orange[do it]!
+
+- Don't do things you don't need > **you will .orange[waste] time**!
+
+- Be prepared to add features/components > **you will .orange[save] time**!
+
+--
+
+<br>
+<br>
+<br>
+<br>
+
+In the following step-by-step project development, we aim to show how to add features accordingly to sequential requirements.
+
+ - change **.orange[the order]** at your convenience
+ - change **.orange[the tools]** at your convenience (or as they will improve/change)
+ - don't implement stages you don't need (until you need them...!)
+
+
+> This won't be a workshop about the tools we will show. It will be a workshop about the processes, the structures, and the motivations in using them.
 
 ---
 class: inverse, middle, center, hide-count
@@ -522,7 +554,7 @@ Posit Cloud: 02 - Foldered
 
 ---
 
-# All this code together is really really HORRIBLE and confusing!
+# All this code .orange[together] is really really HORRIBLE and .orange[confusing]!
 
 > what about a clear structure?
 
@@ -564,65 +596,18 @@ Posit Cloud: 04 - structure
 
 
 
- 
----
-class: inverse, middle, center, hide-count
-
-# .orange[Day **2**]
-
-## `laims.template`
 
 ---
+# Clear pipeline and automation
 
-# Already .orange[explored] features
++ automatic discovering and saving of intermediate/final computed objects
 
-- (`{here}`)<sup>*</sup> (your .orange[path will work] on every computer!)
-
-- git + GitHub (you can .orange[collaborate] and .orange[share] your code, tracking your and others' changes at every single lines levels)
-
-- `{renv}` (packages .orange[updates won't scare] you anymore!)
-
-- `{devtools}` + DESCRIPTION + R/ + tests/ (you know exactly where your functions are, with .orange[provable confidence] of their behavior... you have to press nothing more than `CTRL` + `SHIFT` + `T`)
-
-- (`analysis.R`)<sup>*</sup> + `report.R` (directly inject your - __Updated__ - objects into your reports and sample code)
-
-- private data-raw/, (data/)<sup>*</sup>, and output/ (.orange[everyone can read] your code, only your collaborators and .orange[authorized people will be able to run it]! Still, __you can share__ a selection of derived object to anyone!)
-
-
-.footnote[[*] Why this is between parentheses it will be clear soon.] 
-
-
----
-# New .orange[(not yet) explored] features
-
-- powered by `{targets}`:
-
-  + automatic discovering and saving of intermediate/final computed objects
-
-  + automatic discovering of functions' and objects' dependencies
++ automatic discovering of functions' and objects' dependencies
   
-  + one-click update of all the outdated dependencies for updates (and only those)
-
-- an `explore.R` script specifically designed to host completely **unruled** stuff, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
-
-- created objects are directly usable on computations, reports, and tests (maintaining their privacy if shared storage system is implemented)
-
-- professional-grade report,including logos, authorships with OrcID, citations, marginal notes, custom size for figures, and more (and maybe even more than more if powered by Quarto<sup>*</sup>)
++ automatic update of all the outdated dependencies for updates (and only those)
 
 
-.footnote[[*] We will not talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).] 
-
----
-# .orange[Bonus-unexplored] features
-
-- Code testing coverage: _What .orange[percentage] of "**do-something**" lines of code are effectively tested?_
-
-- Lint checks: _How .orange[good] is your code "**statically**"?_
-
-- GitHub Action: _.orange[automatic] execution of tests/lint/CRAN checks at **every push**!_
-
-- R-package structure: _you can make exported functions available as a **ready-to-use** .orange[r-package]._
-
+> let's talk about `{targets}`:
 
 
 ---
@@ -630,16 +615,51 @@ class: inverse, middle, center, hide-count
 
 .orange[Live session]
 
-Take as reference:
+Start from:
 
 `usethis::use_course("CorradoLanera/private.05")`
-
-or
 
 Posit Cloud: 05 - private
 
 
-and go to [https://github.com/UBESP-DCTV/laims.analysis](https://github.com/UBESP-DCTV/laims.analysis)<br>(You will need a (free) GitHub account!)
+
+---
+class: inverse, middle, center, hide-count
+
+.orange[Final result]
+
+Take as reference:
+
+`usethis::use_course("CorradoLanera/targets.06")`
+
+or
+
+Posit Cloud: 06 - targets
+
+
+
+---
+# A comprehensive .orange[template]
+
+[https://github.com/UBESP-DCTV/laims.analysis](https://github.com/UBESP-DCTV/laims.analysis) <small>- _You will need a (free) GitHub account_</small>
+
+All explored features, plus:
+
+- an **.orange[`explore.R`]** script specifically designed to host completely **unruled** exploratory code, i.e., ugly, un-styled, un-commented, un-usual, un-working, temporary code (which can be easily deleted time-after-time, maintaining their evidence and lesson-learnt thanks to git!)
+
+- **.orange[`targets` objects directly usable]**: on computations, reports, and tests (maintaining their privacy if shared storage system is implemented)
+
+- an **.orange[Rmd report template]**: including logos, authorship with OrcID, citations, marginal notes, custom size for figures, ... (and more if powered by Quarto<sup>*</sup>)
+- **.orange[test coverage]**: _**Percentage** of "**do-something**" code tested._
+- **.orange[lint checks]**: _How **good** is your code "**statically**"?_
+- **.orange[GitHub Action]**: _**automatic** execution of tests/lint/CRAN checks at **every push**!_
+- **.orange[R-package structure]**: _make functions available as a **ready-to-use** r-package._
+
+<small>.right[
+.footnote[[*] We didn't talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).]
+]</small>
+
+
 
 
 ---
@@ -658,7 +678,7 @@ As Soon .orange[As Possible]
 
 - If your results are not correct, all your _high-speed_ goes down to zero!
 
-- **Bugs will be there**. For sure! (The greatest error you can do is to assume your code is going to be error-free)
+- **Bugs will be there**. For sure! <br>The greatest error you can do is to assume your code is going to be error-free
 
 - Do/check .orange[only] what you really need to do/check
 
@@ -674,7 +694,6 @@ As Soon .orange[As Possible]
 - Track
   + changes (git)
   + environment (`{renv}`)
-
 - Use portable paths (`{here}`)
 
 - Use **standard** folder and files (keep structure .orange[invisible])
@@ -683,17 +702,20 @@ As Soon .orange[As Possible]
 
 - Use `DESCRIPTION` to activate R/RStudio super-powers (functions, tests, ...)
 
-- Environmental variables (from function calls!) to point to private locations
+- Environmental vars (from function call, `.gitignore`d) for private locations
 
 - Let `{targets}` manage project dependencies, efficient runs, and efficient storage of your objects
 
-- Use GitHub (or similar) platform to share code (not data, and not secrets!) with collaborators, journals, public!
+- Use GitHub (or similar) to share code (not data,  not secrets!) with collaborators, journals, public, ...!
 
-.center[**If you need all of above, use templates! (like the `laims.analysis` one)**]
+
+.center[**If you know you need all of above, use templates! Like .orange[`laims.analysis`].**]
 
 --
 
-.center[Go for $ASAP := argmin(Project\ time)$!!]
+.center[
+Go for AS**.orange[AP]** $:= argmin(Project\ time)$ !!
+]
 
 ---
 class: inverse, center, middle, hide-count
@@ -701,7 +723,7 @@ class: inverse, center, middle, hide-count
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 .left[
-_.orange[The best] is the enemy of the good!_ <br> .center[... and ...] <br> .right[_The only way to go fast is to .orange[GO WELL!]_]
+_**.orange[The best]** is the enemy of the good!_ <br> .center[... and ...] <br> .right[_The only way to go fast is to **.orange[go well!]**_]
 ]
 
 .tr[
@@ -709,26 +731,31 @@ _.orange[The best] is the enemy of the good!_ <br> .center[... and ...] <br> .ri
 ]
 ]
 
-<br>
 
 # Thank .orange[you] for the attention!
 
 
-Slides: [https://CorradoLanera.github.io/ws-reproj/](https://CorradoLanera.github.io/ws-reproj/#1)
+Slides: [https://CorradoLanera.github.io/ws-reproj](https://CorradoLanera.github.io/ws-reproj/#1)
 
 Repo: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLanera/ws-reproj)
 
 <br>
 
 
+
 [`r fontawesome::fa("link")`](https://www.unipd-ubep.it/) [**www.unipd-ubep.it**](https://www.unipd-ubep.it/) | 
-[`r fontawesome::fa("mail-bulk")`](mailto:Corrado.Lanera@ubep.unipd.it) [**Corrado.Lanera@ubep.unipd.it**](mailto:Corrado.Lanera@ubep.unipd.it)
+[`r fontawesome::fa("github")`](https://github.com/UBESP-DCTV)
+**@UBESP-DCTV**
+
+[`r fontawesome::fa("mail-bulk")`](mailto:Corrado.Lanera@ubep.unipd.it) [**.orange[Corrado.Lanera]@ubep.unipd.it**](mailto:Corrado.Lanera@ubep.unipd.it) | 
+[`r fontawesome::fa("mail-bulk")`](mailto:Andrea.Pedot@ubep.unipd.it) [**.orange[Andrea.Pedot]@ubep.unipd.it**](mailto:Andrea.Pedot@ubep.unipd.it)
 
 [`r fontawesome::fa("github")`](https://github.com/corradolanera)
 [`r fontawesome::fa("twitter")`](https://twitter.com/corradolanera)
 [`r fontawesome::fa("telegram-plane")`](https://telegram.me/CorradoLanera)
 **@CorradoLanera** | 
-[`r fontawesome::fa("github")`](https://github.com/UBESP-DCTV)
-**@UBESP-DCTV**
+[`r fontawesome::fa("github")`](https://github.com/andredot)
+**@andredot**
+
 
 
