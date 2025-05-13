@@ -1,8 +1,8 @@
 ---
-title: "Efficient Reproducibility in R: A Journey from Patchworks to Projects"
-subtitle: 'UBEP Seminars - LAIMS workshops'
+title: 'Practical [Artificial Intelligence]{style="color:darkorange"} for [Medical Data Analyses]{style="color:blue"} with [R]{style="color:darkorange"} - Advanced: Efficient Reproducibility'
+subtitle: 'Biostatistics Months'
 author: "[CorradoLanera](www.CorradoLanera.it)"
-date: "2023-05-16/18 (last update: `r Sys.Date()`)"
+date: "2025-05-14 (last update: `r Sys.Date()`)"
 institute: "[Unit of Biostatistics, Epidemiology, and Public Health](https://www.unipd-ubep.it/) --- University of Padova"
 output: 
   xaringan::moon_reader:
@@ -159,18 +159,13 @@ style_duo_accent(
 <br>
 <br>
 
-# **Efficient Reproducibility in R**<br>**.orange[A Journey from Patchworks to Projects]**
+# Practical **.orange[Artificial Intelligence] for **Medical Data Analyses** with **.orange[R]<br>Advanced
 
-<br>
+## **Efficient Reproducibility in R**<br>**.orange[A Journey from Patchworks to Projects]**
 
-[**Workshop**](https://rmed2023a.sched.com/event/1MwSI/a-journey-from-patchworks-to-projects-a-ready-to-use-project-template-to-popularize-reproducible-research-pipelines-in-everyday-projects-corrado-lanera-andrea-pedot-unit-of-biostatistics-epidemiology-and-public-health-university-of-padova) - Live on Zoom - 2023/06/06 11:00am -- 2:00pm EDT
-
-[.orange[R]/.orange[Medicine]](https://events.linuxfoundation.org/r-medicine/) 2023/06/05-09 
+.orange[Biostatistics Month] 2025/05/14
 
 [.orange[Corrado Lanera]](mailto:CorradoLanera@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
-
-[.orange[Andrea Pedot]](mailto:AndreaPedot@ubep.unipd.it) | [**Unit of Biostatistics, Epidemiology, and Public Health**](https://www.unipd-ubep.it/)
-
 ---
 class: inverse, bottom, right, hide-count
 
@@ -194,34 +189,12 @@ knitr::include_graphics("img/profilo_CL.jpg")
 **@UBESP-DCTV**
 
 ---
-class: inverse, bottom, right, hide-count
-
-
-```{r, echo=FALSE, out.width = "25%"}
-knitr::include_graphics("img/profilo_AP.jpg")
-```
-# Find me at...
-
-
-[`r fontawesome::fa("link")`](https://www.unipd-ubep.it/) [**www.unipd-ubep.it**](https://www.unipd-ubep.it/)
-
-[`r fontawesome::fa("mail-bulk")`](mailto:AndreaPedot@ubep.unipd.it) [**Andrea.Pedot**__.orange[@ubep.unipd.it]__](mailto:Andrea.Pedot@ubep.unipd.it)
-
-[`r fontawesome::fa("github")`](https://github.com/andredot)
-**@andredot**
-
-[`r fontawesome::fa("github")`](https://github.com/UBESP-DCTV)
-**@UBESP-DCTV**
-
-
----
 
 # How to .orange[follow] the workshops
 
 #### Resources:
 
 - .orange[Slides]: [https://corradolanera.github.io/ws-reproj/](https://corradolanera.github.io/ws-reproj/#1)
-- **Questions** @Zoom: .orange[Q/A] & .orange[Breakout Room] w/ **Andrea Pedot**
 
 #### Coding:
 
@@ -251,8 +224,6 @@ class: hide-count
 
 # .orange[Outline]
 
-- **.underline[Setup]**: Slides, Posit Cloud Workspace, repository
-
 - **.underline[Intro]**: definition of **.orange[AS]**AP, the anatomy of a **.orange[patchwork]**
 
 - **.underline[Program]**: start **.orange[slow]**, do not waste **.orange[_time_]**
@@ -278,7 +249,7 @@ class: inverse, middle, center, hide-count
 
 # Intro: **.orange[AS]AP**
 
- 
+**Disclaimer**: ALL of the following is derived by personal experience, **.orange[failures]**, and lessons learnt in the last 11 years at UBEP as a biostatistician and data scientist, coding in R quite every single night `r emo::ji("night")`.
 
 ---
 
@@ -303,7 +274,7 @@ What usually happens...
 - > **send** the (hopefully) correct report 3 minutes **.underline[before]** **.orange[_by yesterday_!!!]**
 --
 
-- > get a .orange[**BUG** reported by the **BOSS**!] (... it's a **.orange[_BOGSS_]** `r emo::ji("fear")``r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`)
+- > get a .orange[**BUG** reported by the **BOSS**!] (... it's a **.orange[_B`r emo::ji("fear")`GSS_]** `r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`)
 --
 
 - But now we can not give up: produce a new version night-time (**.orange[without falling asleep]**)
@@ -326,7 +297,7 @@ class: inverse, middle, center, hide-count
 
 --
 
-**.orange[_BOGSS_]** `r emo::ji("fear")``r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`
+**.orange[_B`r emo::ji("fear")`GSS_]** `r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`
 
 --
 
@@ -356,7 +327,7 @@ So they prefer to **RESTART** from scratch<br>(adding sub-folders, sub-files, su
 
 --
 
-**.orange[_BOGSS_]** `r emo::ji("fear")``r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`
+**.orange[_B`r emo::ji("fear")`GSS_]** `r emo::ji("person_facepalming")``r emo::ji("loudly_crying_face")`
 
 ---
 class: inverse, middle, center, hide-count
@@ -391,7 +362,11 @@ class: inverse, middle, center, hide-count
 ---
 class: inverse, middle, center, hide-count
 
-Go Tidyverse
+Go Tidyverse (but...)
+
+<img src="img/data-science.png" width="100%"/>
+
+[tidyverse.tidyverse.org/articles/paper.html](https://tidyverse.tidyverse.org/articles/paper.html)
 
 ---
 class: middle, center
@@ -412,7 +387,7 @@ class: inverse, middle, center, hide-count
 
 ---
 
-# Whose **time**?!
+# .orange[Whose] **time** <small><small>you don't have to waste</small></small>?!
 
 - Your time?!
 
@@ -427,7 +402,7 @@ class: inverse, middle, center, hide-count
 
 **.center[.orange[Project time] = ]**
 
-$$\sum_{i = 1}^{correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i(by = p, for = t, include\_breaks = TRUE)\right)$$
+$$\sum_{i = 1}^{\#\ correct\ version!}\left(\sum_{p\in team}\sum_{t\in tasks} time_i(by = p, for = t, include\_breaks = TRUE)\right)$$
 
 --
 <br>
@@ -496,7 +471,7 @@ We start from just a bare project
 
 --
 
-- let's talk about `{renv}`
+- let's talk about RStudio projects and `{renv}`
 
 --
 
@@ -649,15 +624,15 @@ All explored features, plus:
 
 - **.orange[`targets` objects directly usable]**: on computations, reports, and tests (maintaining their privacy if shared storage system is implemented)
 
-- an **.orange[Rmd report template]**: including logos, authorship with OrcID, citations, marginal notes, custom size for figures, ... (and more if powered by Quarto<sup>*</sup>)
+- a **.orange[qmd report template]**: including logos, authorship with OrcID, citations, marginal notes, custom size for figures, ... (and more as powered by Quarto<sup>*</sup>)
 - **.orange[test coverage]**: _**Percentage** of "**do-something**" code tested._
 - **.orange[lint checks]**: _How **good** is your code "**statically**"?_
 - **.orange[GitHub Action]**: _**automatic** execution of tests/lint/CRAN checks at **every push**!_
 - **.orange[R-package structure]**: _make functions available as a **ready-to-use** r-package._
 
-<small>.right[
+<small>
 .footnote[[*] We didn't talk about Quarto today, if interested see: [https://quarto.org/](https://quarto.org/), and [https://books.ropensci.org/targets/literate-programming.html#quarto-targets](https://books.ropensci.org/targets/literate-programming.html#quarto-targets).]
-]</small>
+</small>
 
 
 
@@ -684,7 +659,7 @@ As Soon .orange[As Possible]
 
 - Enforce .orange[standards] and a coherent .orange[style]
 
-- Use **templates**:   .orange[Conventions] are all about making stuff **.orange[invisible]**!
+- Use **templates**:   .orange[Conventions] are all about making repetitive stuff **.orange[invisible]**!
 
 
 ---
@@ -706,7 +681,7 @@ As Soon .orange[As Possible]
 
 - Let `{targets}` manage project dependencies, efficient runs, and efficient storage of your objects
 
-- Use GitHub (or similar) to share code (not data,  not secrets!) with collaborators, journals, public, ...!
+- Use GitHub (or similar) to share code (not data  nor secrets!) with collaborators, journals, public, ...!
 
 
 .center[**If you know you need all of above, use templates! Like .orange[`laims.analysis`].**]
@@ -747,15 +722,10 @@ Repo: [https://github.com/CorradoLanera/ws-reproj](https://github.com/CorradoLan
 [`r fontawesome::fa("github")`](https://github.com/UBESP-DCTV)
 **@UBESP-DCTV**
 
-[`r fontawesome::fa("mail-bulk")`](mailto:Corrado.Lanera@ubep.unipd.it) [**.orange[Corrado.Lanera]@ubep.unipd.it**](mailto:Corrado.Lanera@ubep.unipd.it) | 
-[`r fontawesome::fa("mail-bulk")`](mailto:Andrea.Pedot@ubep.unipd.it) [**.orange[Andrea.Pedot]@ubep.unipd.it**](mailto:Andrea.Pedot@ubep.unipd.it)
-
-[`r fontawesome::fa("github")`](https://github.com/corradolanera)
+[`r fontawesome::fa("mail-bulk")`](mailto:Corrado.Lanera@ubep.unipd.it) [**.orange[Corrado.Lanera]@ubep.unipd.it**](mailto:Corrado.Lanera@ubep.unipd.it) | [`r fontawesome::fa("github")`](https://github.com/corradolanera)
 [`r fontawesome::fa("twitter")`](https://twitter.com/corradolanera)
 [`r fontawesome::fa("telegram-plane")`](https://telegram.me/CorradoLanera)
-**@CorradoLanera** | 
-[`r fontawesome::fa("github")`](https://github.com/andredot)
-**@andredot**
+**@CorradoLanera**
 
 
 
